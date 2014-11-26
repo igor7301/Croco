@@ -64,7 +64,7 @@ public class NameOfPlayersActivity extends Activity implements View.OnClickListe
         for(int i = 0; i < getNumberOfPlayers(); i++) {
 
             TextView textView  = new TextView(this);
-            textView.setText("Player " + (i+1));
+            textView.setText(getResources().getString(R.string.player) + (i+1));
             getNameOfPlayers().add(i, new EditText(this));
             getTextOfPlayers().add(i, textView);
 

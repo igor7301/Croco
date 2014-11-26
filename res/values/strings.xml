@@ -5,6 +5,8 @@
     <string name="startGame">Начать игру</string>
     <string name="numberOfPlayers">Введите количество игроков</string>
     <string name="namesOfPlayers">Введите имена игроков</string>
+    <string name="choosePlayer">Выберите игрока</string>
+    <string name="player">Игрок </string>
     <string name="previousCard">Предыдущая карта</string>
     <string name="nextCard">Следующая карта</string>
     <string name="name">Игрок:</string>

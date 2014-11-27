@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Крокодил</string>
+    <string name="_continue">Далее</string>
+    <string name="startGame">Начать игру</string>
+    <string name="numberOfPlayers">Введите количество игроков</string>
+    <string name="namesOfPlayers">Введите имена игроков</string>
+    <string name="previousCard">Предыдущая карта</string>
+    <string name="nextCard">Следующая карта</string>
+    <string name="name">Игрок:</string>
+    <string name="cardId">Карта:</string>
+    <string name="defaultWord">Пусто</string>
+    <string name="error">Ошибка</string>
+    <string name="noAvailableCards">Нет доступных карт</string>
+
+
+
+</resources>

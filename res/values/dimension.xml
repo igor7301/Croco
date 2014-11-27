@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="wordSize">20dp</dimen>
+    <dimen name="wordPaddingBottom">8dp</dimen>
+    <dimen name="wordPaddingLeft">10dp</dimen>
+    <dimen name="textSizeOnButtons">10dp</dimen>
+</resources>

@@ -4,4 +4,6 @@
     <dimen name="wordPaddingBottom">8dp</dimen>
     <dimen name="wordPaddingLeft">10dp</dimen>
     <dimen name="textSizeOnButtons">10dp</dimen>
+    <dimen name="widthOfButtonWithTextOnActiveCard">150dp</dimen>
+
 </resources>

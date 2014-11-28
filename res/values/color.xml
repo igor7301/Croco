@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="wordOnActiveCard">#ffffffff</color>
+    <color name="inactivePoints">#ffaaaaaa</color>
+    <color name="activePoints">#ffffffff</color>
+    <color name="activePointsStroke">#ff000000</color>
+
 </resources>

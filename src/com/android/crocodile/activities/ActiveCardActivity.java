@@ -2,17 +2,12 @@ package com.android.crocodile.activities;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 import com.android.crocodile.Card;
 import com.android.crocodile.R;
 import com.android.crocodile.Utils;
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -29,15 +24,13 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
     private ImageButton btnGetPreviousCard;
     private TextView txtPlayerName;
     private TextView txtCardID;
+    private Button btnBlock1;
+    private Button btnBlock2;
+    private Button btnBlock3;
+    private Button btnBlock4;
+    private Button btnBlock5;
 
-   private TextView txtWord1;
-   private TextView txtWord2;
-   private TextView txtWord3;
-   private TextView txtWord4;
-   private TextView txtWord5;
-   private TextView txtWord6;
-   private TextView txtWord7;
-   private TextView txtWord8;
+
 
 
     @Override
@@ -51,16 +44,16 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
         btnGetPreviousCard.setOnClickListener(this);
         txtPlayerName = (TextView) findViewById(R.id.nameOfPlayer);
         txtCardID = (TextView) findViewById(R.id.cardID);
-
-
-        txtWord1 = (TextView) findViewById(R.id.txtWord1);
-        txtWord2 = (TextView) findViewById(R.id.txtWord2);
-        txtWord3 = (TextView) findViewById(R.id.txtWord3);
-        txtWord4 = (TextView) findViewById(R.id.txtWord4);
-        txtWord5 = (TextView) findViewById(R.id.txtWord5);
-        txtWord6 = (TextView) findViewById(R.id.txtWord6);
-        txtWord7 = (TextView) findViewById(R.id.txtWord7);
-        txtWord8 = (TextView) findViewById(R.id.txtWord8);
+        btnBlock1 = (Button) findViewById(R.id.btnBlock1);
+        btnBlock2 = (Button) findViewById(R.id.btnBlock2);
+        btnBlock3 = (Button) findViewById(R.id.btnBlock3);
+        btnBlock4 = (Button) findViewById(R.id.btnBlock4);
+        btnBlock5 = (Button) findViewById(R.id.btnBlock5);
+        btnBlock1.setOnClickListener(this);
+        btnBlock2.setOnClickListener(this);
+        btnBlock3.setOnClickListener(this);
+        btnBlock4.setOnClickListener(this);
+        btnBlock5.setOnClickListener(this);
 
 
         Intent intent = getIntent();
@@ -83,44 +76,120 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
     @Override
     public void onClick(View view) {
-        if(!playersCards.isEmpty()) {
+        ImageView points;
             switch (view.getId()) {
                 case R.id.btnGetNextCard:
+                    if(!playersCards.isEmpty()) {
+                        if (activeCardId == playersCards.size() - 1) {
+                            Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
+                        } else {
+                            activeCardId = activeCardId + 1;
+                            updateCardForPlayer();
 
-                    //if(playersCards.size() <= 1) {
-                    if(activeCardId == playersCards.size() - 1) {
-
-                        Toast.makeText(this, getString(R.string.noAvailableCards),  Toast.LENGTH_SHORT).show();
+                        }
                     }
                     else {
-                        activeCardId = activeCardId + 1;
-                        // playersCards.remove(activeCardId);
-                        updateCardForPlayer();
-
+                        Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
                     }
                     break;
                 case R.id.btnGetPreviousCard:
-                    //if(playersCards.size() <= 1) {
-                    if(activeCardId == 0) {
+                    if(!playersCards.isEmpty()) {
+                        if (activeCardId == 0) {
 
-                        Toast.makeText(this, getString(R.string.noAvailableCards),  Toast.LENGTH_SHORT).show();
+                            Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
+                        } else {
+                            activeCardId = activeCardId - 1;
+                            updateCardForPlayer();
+                        }
                     }
                     else {
-                        activeCardId = activeCardId - 1;
-                        // playersCards.remove(activeCardId);
-                        updateCardForPlayer();
+                        Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
+                    }
+                    break;
+                case R.id.btnBlock1:
+                    points = (ImageView) findViewById(R.id.imgPointsBlock1);
+                    if (points.isSelected()) {
+                        points.setSelected(false);
+                    } else {
+                        points.setSelected(true);
+                    }
 
+                    if (points.isSelected()) {
+                        points.setImageResource(R.drawable.points_three_active);
 
+                    } else {
+                        points.setImageResource(R.drawable.points_three_inactive);
+                    }
+                    break;
+
+                case R.id.btnBlock2:
+                   points = (ImageView) findViewById(R.id.imgPointsBlock2);
+                    if (points.isSelected()) {
+                        points.setSelected(false);
+                    } else {
+                        points.setSelected(true);
+                    }
+
+                    if (points.isSelected()) {
+                        points.setImageResource(R.drawable.points_two_active);
+
+                    } else {
+                        points.setImageResource(R.drawable.points_two_inactive);
+                    }
+                    break;
+
+                case R.id.btnBlock3:
+                    points = (ImageView) findViewById(R.id.imgPointsBlock3);
+                    if (points.isSelected()) {
+                        points.setSelected(false);
+                    } else {
+                        points.setSelected(true);
+                    }
+
+                    if (points.isSelected()) {
+                        points.setImageResource(R.drawable.points_two_active);
+
+                    } else {
+                        points.setImageResource(R.drawable.points_two_inactive);
+                    }
+                    break;
+
+                case R.id.btnBlock4:
+                    points = (ImageView) findViewById(R.id.imgPointsBlock4);
+                    if (points.isSelected()) {
+                        points.setSelected(false);
+                    } else {
+                        points.setSelected(true);
+                    }
+
+                    if (points.isSelected()) {
+                        points.setImageResource(R.drawable.points_five_active);
+
+                    } else {
+                        points.setImageResource(R.drawable.points_five_inactive);
+                    }
+                    break;
+
+                case R.id.btnBlock5:
+                    points = (ImageView) findViewById(R.id.imgBlock5);
+                    if (points.isSelected()) {
+                        points.setSelected(false);
+                    } else {
+                        points.setSelected(true);
+                    }
+
+                    if (points.isSelected()) {
+                        points.setImageResource(R.drawable.points_seven_active);
+
+                    } else {
+                        points.setImageResource(R.drawable.points_seven_inactive);
                     }
                     break;
             }
         }
-        else {
-            Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
-        }
 
 
-    }
+
 
     @Override
     public void onBackPressed() {
@@ -134,15 +203,24 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
     private void updateCardForPlayer() {
         Integer  cardIDForDisplay = activeCardId + 1;
+
+        btnBlock1.setText(playersCards.get(activeCardId).getWord1() + "\n" +
+                playersCards.get(activeCardId).getWord2() + "\n" +
+                playersCards.get(activeCardId).getWord3());
+        
+        btnBlock2.setText(playersCards.get(activeCardId).getWord4() + "\n" +
+                playersCards.get(activeCardId).getWord5());
+
+        btnBlock3.setText(playersCards.get(activeCardId).getWord6());
+        btnBlock4.setText(playersCards.get(activeCardId).getWord7());
+        btnBlock5.setText(playersCards.get(activeCardId).getWord8());
+
+
         txtPlayerName.setText(playerName);
         txtCardID.setText(cardIDForDisplay.toString());
-        txtWord1.setText(playersCards.get(activeCardId).getWord1());
-        txtWord2.setText(playersCards.get(activeCardId).getWord2());
-        txtWord3.setText(playersCards.get(activeCardId).getWord3());
-        txtWord4.setText(playersCards.get(activeCardId).getWord4());
-        txtWord5.setText(playersCards.get(activeCardId).getWord5());
-        txtWord6.setText(playersCards.get(activeCardId).getWord6());
-        txtWord7.setText(playersCards.get(activeCardId).getWord7());
-        txtWord8.setText(playersCards.get(activeCardId).getWord8());
+
+
+
+
     }
 }

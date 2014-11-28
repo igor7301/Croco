@@ -19,13 +19,19 @@ public class Card implements Parcelable {
     private String word6;
     private String word7;
     private String word8;
+    private int pointForBlock1;
+    private int pointForBlock2;
+    private int pointForBlock3;
+    private int pointForBlock4;
+    private int pointForBlock5;
+
     private int id;
 
     public Card() {
 
     }
 
-    public Card(String word1, String word2, String word3, String word4, String word5, String word6, String word7, String word8) {
+    public Card(String word1, String word2, String word3, String word4, String word5, String word6, String word7, String word8, int pointForBlock1, int pointForBlock2, int pointForBlock3, int pointForBlock4, int pointForBlock5) {
         this.word1 = word1;
         this.word2 = word2;
         this.word3 = word3;
@@ -34,7 +40,11 @@ public class Card implements Parcelable {
         this.word6 = word6;
         this.word7 = word7;
         this.word8 = word8;
-
+        this.pointForBlock1 = pointForBlock1;
+        this.pointForBlock2 = pointForBlock2;
+        this.pointForBlock3 = pointForBlock3;
+        this.pointForBlock4 = pointForBlock4;
+        this.pointForBlock5 = pointForBlock5;
     }
 
 
@@ -102,6 +112,45 @@ public class Card implements Parcelable {
         this.word8 = word8;
     }
 
+    public int getPointForBlock1() {
+        return pointForBlock1;
+    }
+
+    public void setPointForBlock1(int pointForBlock1) {
+        this.pointForBlock1 = pointForBlock1;
+    }
+
+    public int getPointForBlock2() {
+        return pointForBlock2;
+    }
+
+    public void setPointForBlock2(int pointForBlock2) {
+        this.pointForBlock2 = pointForBlock2;
+    }
+
+    public int getPointForBlock3() {
+        return pointForBlock3;
+    }
+
+    public void setPointForBlock3(int pointForBlock3) {
+        this.pointForBlock3 = pointForBlock3;
+    }
+
+    public int getPointForBlock4() {
+        return pointForBlock4;
+    }
+
+    public void setPointForBlock4(int pointForBlock4) {
+        this.pointForBlock4 = pointForBlock4;
+    }
+
+    public int getPointForBlock5() {
+        return pointForBlock5;
+    }
+
+    public void setPointForBlock5(int pointForBlock5) {
+        this.pointForBlock5 = pointForBlock5;
+    }
 
     public int getId() {
         return id;
@@ -119,6 +168,7 @@ public class Card implements Parcelable {
     @Override
     public void writeToParcel(Parcel parcel, int flag) {
        parcel.writeStringArray(new String[] {getWord1(), getWord2(), getWord3(), getWord4(), getWord5(), getWord6(), getWord7(), getWord8()});
+        parcel.writeIntArray(new int[] {getPointForBlock1(), getPointForBlock2(), getPointForBlock3(), getPointForBlock4(), getPointForBlock5()});
 
 
     }
@@ -147,7 +197,13 @@ public class Card implements Parcelable {
         setWord7(data[6]);
         setWord8(data[7]);
 
-
+        int[] dataint = new int[5];
+        parcel.readIntArray(dataint);
+        setPointForBlock1(dataint[0]);
+        setPointForBlock2(dataint[1]);
+        setPointForBlock3(dataint[2]);
+        setPointForBlock4(dataint[3]);
+        setPointForBlock5(dataint[4]);
 
     }
 }

@@ -58,8 +58,8 @@ public class CardManager {
 
 
 
-        cards.add(new Card("Дом", "Сад", "Окот", "кот", "лог", "пот", "дог", "рот"));
-        cards.add(new Card("Дом2", "Сад2", "Окот2", "кот2", "лог2", "пот2", "до2г", "ро2т"));
+//        cards.add(new Card("Дом", "Сад", "Окот", "кот", "лог", "пот", "дог", "рот"));
+//        cards.add(new Card("Дом2", "Сад2", "Окот2", "кот2", "лог2", "пот2", "до2г", "ро2т"));
 
 
 //        cards.add(new Card("home3", "car3", "cat3", "fog3", "sum3", "train3", "frog3", "swing3"));
@@ -173,7 +173,7 @@ public class CardManager {
         TypedArray ta = res.obtainTypedArray(R.array.cards);
         String[] ar = res.getStringArray(ta.getResourceId(i, 0));
 
-        return  new Card(ar[0],ar[1], ar[2], ar[3],ar[4],ar[5],ar[6],ar[7]);
+        return  new Card(ar[0],ar[1], ar[2], ar[3],ar[4],ar[5],ar[6],ar[7], 0, 0, 0, 0, 0);
     }
 
     public List<Card> loadCardsFromDB() {

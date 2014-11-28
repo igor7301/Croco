@@ -86,11 +86,10 @@ public class ChoosePlayerActivity extends Activity implements View.OnClickListen
         if(RESULT_OK == resultCode) {
             switch (requestCode ) {
                 case  Utils.REQUEST_CODE_ACTIVE_CARD:
-//                    ArrayList<Card> lstUpdatedCards = data.getParcelableArrayListExtra(Utils.PLAYERS_CARDS);
-//                    lstDividedCards
-//                            .set(Integer.parseInt(data.getStringExtra(Utils.PLAYER_ID)), lstUpdatedCards);
-                    ;
-                  ;
+                    ArrayList<Card> lstUpdatedCards = data.getParcelableArrayListExtra(Utils.PLAYERS_CARDS);
+                    lstDividedCards
+                            .set(Integer.parseInt(data.getStringExtra(Utils.PLAYER_ID)), lstUpdatedCards);
+
                     activeCardsID.set(Integer.parseInt(data.getStringExtra(Utils.PLAYER_ID)),
                             Integer.parseInt(data.getStringExtra(Utils.ACTIVE_CARD_ID)));
                     break;

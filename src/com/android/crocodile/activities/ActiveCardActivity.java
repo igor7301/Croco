@@ -29,6 +29,11 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
     private Button btnBlock3;
     private Button btnBlock4;
     private Button btnBlock5;
+    private ImageView imgPointForBlock1;
+    private ImageView imgPointForBlock2;
+    private ImageView imgPointForBlock3;
+    private ImageView imgPointForBlock4;
+    private ImageView imgPointForBlock5;
 
 
 
@@ -49,6 +54,11 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
         btnBlock3 = (Button) findViewById(R.id.btnBlock3);
         btnBlock4 = (Button) findViewById(R.id.btnBlock4);
         btnBlock5 = (Button) findViewById(R.id.btnBlock5);
+        imgPointForBlock1  = (ImageView) findViewById(R.id.imgPointsBlock1);
+        imgPointForBlock2  = (ImageView) findViewById(R.id.imgPointsBlock2);
+        imgPointForBlock3  = (ImageView) findViewById(R.id.imgPointsBlock3);
+        imgPointForBlock4  = (ImageView) findViewById(R.id.imgPointsBlock4);
+        imgPointForBlock5  = (ImageView) findViewById(R.id.imgPointsBlock5);
         btnBlock1.setOnClickListener(this);
         btnBlock2.setOnClickListener(this);
         btnBlock3.setOnClickListener(this);
@@ -107,7 +117,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
                     }
                     break;
                 case R.id.btnBlock1:
-                    points = (ImageView) findViewById(R.id.imgPointsBlock1);
+                    points = imgPointForBlock1;
                     if (points.isSelected()) {
                         points.setSelected(false);
                     } else {
@@ -115,15 +125,17 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
                     }
 
                     if (points.isSelected()) {
-                        points.setImageResource(R.drawable.points_three_active);
+                        points.setImageResource(R.drawable.points_block1_active);
+                        playersCards.get(activeCardId).setPointForBlock1(3);
 
                     } else {
-                        points.setImageResource(R.drawable.points_three_inactive);
+                        points.setImageResource(R.drawable.points_block1_inactive);
+                        playersCards.get(activeCardId).setPointForBlock1(0);
                     }
                     break;
 
                 case R.id.btnBlock2:
-                   points = (ImageView) findViewById(R.id.imgPointsBlock2);
+                   points = imgPointForBlock2;
                     if (points.isSelected()) {
                         points.setSelected(false);
                     } else {
@@ -131,15 +143,17 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
                     }
 
                     if (points.isSelected()) {
-                        points.setImageResource(R.drawable.points_two_active);
+                        points.setImageResource(R.drawable.points_block2_active);
+                        playersCards.get(activeCardId).setPointForBlock2(2);
 
                     } else {
-                        points.setImageResource(R.drawable.points_two_inactive);
+                        points.setImageResource(R.drawable.points_block2_inactive);
+                        playersCards.get(activeCardId).setPointForBlock2(0);
                     }
                     break;
 
                 case R.id.btnBlock3:
-                    points = (ImageView) findViewById(R.id.imgPointsBlock3);
+                    points = imgPointForBlock3;
                     if (points.isSelected()) {
                         points.setSelected(false);
                     } else {
@@ -147,15 +161,17 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
                     }
 
                     if (points.isSelected()) {
-                        points.setImageResource(R.drawable.points_two_active);
+                        points.setImageResource(R.drawable.points_block3_active);
+                        playersCards.get(activeCardId).setPointForBlock3(2);
 
                     } else {
-                        points.setImageResource(R.drawable.points_two_inactive);
+                        points.setImageResource(R.drawable.points_block3_inactive);
+                        playersCards.get(activeCardId).setPointForBlock3(0);
                     }
                     break;
 
                 case R.id.btnBlock4:
-                    points = (ImageView) findViewById(R.id.imgPointsBlock4);
+                    points = imgPointForBlock4;
                     if (points.isSelected()) {
                         points.setSelected(false);
                     } else {
@@ -163,15 +179,17 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
                     }
 
                     if (points.isSelected()) {
-                        points.setImageResource(R.drawable.points_five_active);
+                        points.setImageResource(R.drawable.points_block4_active);
+                        playersCards.get(activeCardId).setPointForBlock4(5);
 
                     } else {
-                        points.setImageResource(R.drawable.points_five_inactive);
+                        points.setImageResource(R.drawable.points_block4_inactive);
+                        playersCards.get(activeCardId).setPointForBlock4(0);
                     }
                     break;
 
                 case R.id.btnBlock5:
-                    points = (ImageView) findViewById(R.id.imgBlock5);
+                    points = imgPointForBlock5;
                     if (points.isSelected()) {
                         points.setSelected(false);
                     } else {
@@ -179,10 +197,12 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
                     }
 
                     if (points.isSelected()) {
-                        points.setImageResource(R.drawable.points_seven_active);
+                        points.setImageResource(R.drawable.points_block5_active);
+                        playersCards.get(activeCardId).setPointForBlock5(7);
 
                     } else {
-                        points.setImageResource(R.drawable.points_seven_inactive);
+                        points.setImageResource(R.drawable.points_block5_inactive);
+                        playersCards.get(activeCardId).setPointForBlock5(0);
                     }
                     break;
             }
@@ -191,10 +211,11 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
 
 
+
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(this, ChoosePlayerActivity.class);
-       // intent.putParcelableArrayListExtra(Utils.PLAYERS_CARDS, playersCards);
+        intent.putParcelableArrayListExtra(Utils.PLAYERS_CARDS, playersCards);
         intent.putExtra(Utils.PLAYER_ID, playerId.toString());
         intent.putExtra(Utils.ACTIVE_CARD_ID, activeCardId.toString());
         setResult(RESULT_OK, intent);
@@ -220,6 +241,38 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
         txtCardID.setText(cardIDForDisplay.toString());
 
 
+
+
+        if (playersCards.get(activeCardId).getPointForBlock1() > 0) {
+           imgPointForBlock1.setImageResource(R.drawable.points_block1_active);
+
+        }
+        else { imgPointForBlock1.setImageResource(R.drawable.points_block1_inactive); }
+
+
+        if (playersCards.get(activeCardId).getPointForBlock2() > 0) {
+            imgPointForBlock2.setImageResource(R.drawable.points_block2_active);
+
+        }
+        else { imgPointForBlock2.setImageResource(R.drawable.points_block2_inactive); }
+
+        if (playersCards.get(activeCardId).getPointForBlock3() > 0) {
+            imgPointForBlock3.setImageResource(R.drawable.points_block3_active);
+
+        }
+        else { imgPointForBlock3.setImageResource(R.drawable.points_block3_inactive); }
+
+        if (playersCards.get(activeCardId).getPointForBlock4() > 0) {
+            imgPointForBlock4.setImageResource(R.drawable.points_block4_active);
+
+        }
+        else { imgPointForBlock4.setImageResource(R.drawable.points_block4_inactive); }
+
+        if (playersCards.get(activeCardId).getPointForBlock5() > 0) {
+            imgPointForBlock5.setImageResource(R.drawable.points_block5_active);
+
+        }
+        else { imgPointForBlock5.setImageResource(R.drawable.points_block5_inactive); }
 
 
     }

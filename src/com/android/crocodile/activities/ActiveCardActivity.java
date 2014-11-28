@@ -118,13 +118,8 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
                     break;
                 case R.id.btnBlock1:
                     points = imgPointForBlock1;
-                    if (points.isSelected()) {
-                        points.setSelected(false);
-                    } else {
-                        points.setSelected(true);
-                    }
 
-                    if (points.isSelected()) {
+                    if ( playersCards.get(activeCardId).getPointForBlock1() == 0 ) {
                         points.setImageResource(R.drawable.points_block1_active);
                         playersCards.get(activeCardId).setPointForBlock1(3);
 
@@ -136,13 +131,8 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
                 case R.id.btnBlock2:
                    points = imgPointForBlock2;
-                    if (points.isSelected()) {
-                        points.setSelected(false);
-                    } else {
-                        points.setSelected(true);
-                    }
 
-                    if (points.isSelected()) {
+                    if ( playersCards.get(activeCardId).getPointForBlock2() == 0 ) {
                         points.setImageResource(R.drawable.points_block2_active);
                         playersCards.get(activeCardId).setPointForBlock2(2);
 
@@ -154,13 +144,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
                 case R.id.btnBlock3:
                     points = imgPointForBlock3;
-                    if (points.isSelected()) {
-                        points.setSelected(false);
-                    } else {
-                        points.setSelected(true);
-                    }
-
-                    if (points.isSelected()) {
+                    if ( playersCards.get(activeCardId).getPointForBlock3() == 0 ) {
                         points.setImageResource(R.drawable.points_block3_active);
                         playersCards.get(activeCardId).setPointForBlock3(2);
 
@@ -172,13 +156,8 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
                 case R.id.btnBlock4:
                     points = imgPointForBlock4;
-                    if (points.isSelected()) {
-                        points.setSelected(false);
-                    } else {
-                        points.setSelected(true);
-                    }
 
-                    if (points.isSelected()) {
+                    if (playersCards.get(activeCardId).getPointForBlock4() == 0 ) {
                         points.setImageResource(R.drawable.points_block4_active);
                         playersCards.get(activeCardId).setPointForBlock4(5);
 
@@ -190,13 +169,8 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
                 case R.id.btnBlock5:
                     points = imgPointForBlock5;
-                    if (points.isSelected()) {
-                        points.setSelected(false);
-                    } else {
-                        points.setSelected(true);
-                    }
 
-                    if (points.isSelected()) {
+                    if ( playersCards.get(activeCardId).getPointForBlock5() == 0 ) {
                         points.setImageResource(R.drawable.points_block5_active);
                         playersCards.get(activeCardId).setPointForBlock5(7);
 

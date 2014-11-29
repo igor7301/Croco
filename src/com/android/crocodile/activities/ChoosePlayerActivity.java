@@ -53,18 +53,7 @@ public class ChoosePlayerActivity extends Activity implements View.OnClickListen
         setNumberOfPlayers(Integer.parseInt(getIntent().getStringExtra(Utils.NUMBER_OF_PLAYERS)));
 
 
-        nameOfPlayers = new ArrayList<String>();
-        setLstButtons(new ArrayList<Button>());
-        for(int i = 0; i < getNumberOfPlayers(); i++) {
 
-            Button btn = new Button(this);
-            nameOfPlayers.add(i,getIntent().getStringArrayListExtra(Utils.NAME_OF_PLAYERS).get(i) );
-            btn.setText(nameOfPlayers.get(i));
-            btn.setId(i);
-            btn.setOnClickListener(this);
-            getLstButtons().add(i, btn);
-            llChoosePlayersActivity.addView(btn);
-        }
 
         CardManager cardManager  = new CardManager(this);
         //cardManager.saveCardsIntoDB(cardManager.createCards());
@@ -75,6 +64,19 @@ public class ChoosePlayerActivity extends Activity implements View.OnClickListen
         lstAvailableCards = cardManager.loadCardsFromXML();
         lstDividedCards = cardManager.divideCardsBetweenPlayers(lstAvailableCards, numberOfPlayers);
         activeCardsID = cardManager.setActiveCardsForStart(numberOfPlayers);
+
+        nameOfPlayers = new ArrayList<String>();
+        setLstButtons(new ArrayList<Button>());
+        for(int i = 0; i < getNumberOfPlayers(); i++) {
+
+            Button btn = new Button(this);
+            nameOfPlayers.add(i,getIntent().getStringArrayListExtra(Utils.NAME_OF_PLAYERS).get(i) );
+            btn.setText(nameOfPlayers.get(i) + " " + getResources().getString(R.string.points) + getPointsForPlayer(i));
+            btn.setId(i);
+            btn.setOnClickListener(this);
+            getLstButtons().add(i, btn);
+            llChoosePlayersActivity.addView(btn);
+        }
 
         lstAvailableCards = null;
         System.gc(); //delete available cards. we will not use them anymore
@@ -92,12 +94,33 @@ public class ChoosePlayerActivity extends Activity implements View.OnClickListen
 
                     activeCardsID.set(Integer.parseInt(data.getStringExtra(Utils.PLAYER_ID)),
                             Integer.parseInt(data.getStringExtra(Utils.ACTIVE_CARD_ID)));
+                    for(int i = 0; i < getNumberOfPlayers(); i++) {
+
+                        getLstButtons().get(i)
+                                .setText(nameOfPlayers.get(i) + " " +
+                                        getResources().getString(R.string.points) + getPointsForPlayer(i));
+
+                    }
                     break;
             }
         }
         else {
             Toast.makeText(this, getString(R.string.error), Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public int getPointsForPlayer(int playerId){
+        List<Card> playersCard = lstDividedCards.get(playerId);
+        int points = 0;
+        for(int i = 0; i < playersCard.size(); i++){
+           points = points +
+                   playersCard.get(i).getPointForBlock1() +
+                   playersCard.get(i).getPointForBlock2() +
+                   playersCard.get(i).getPointForBlock3() +
+                   playersCard.get(i).getPointForBlock4() +
+                   playersCard.get(i).getPointForBlock5();
+        }
+        return points;
     }
 
     @Override

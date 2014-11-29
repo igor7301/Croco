@@ -105,187 +105,104 @@
 
     </array>
 
-    <string-array name='card1'>	<item>	письмо	</item>	<item>	фильм	</item>	<item>	кость	</item>	<item>	организовать	</item>	<item>	потребовать	</item>	<item>	год	</item>	<item>	Альфа и омега 	</item>	<item>	"Побег из Шоушенка (1994)
-        The Shawshank Redemption"	</item>	</string-array>
-    <string-array name='card2'>	<item>	утро	</item>	<item>	край	</item>	<item>	спорт	</item>	<item>	доказать	</item>	<item>	жалеть	</item>	<item>	человек	</item>	<item>	Ахиллесова пята 	</item>	<item>	"Зеленая миля (1999)
-        The Green Mile"	</item>	</string-array>
-    <string-array name='card3'>	<item>	помощь	</item>	<item>	гость	</item>	<item>	кредит	</item>	<item>	приносить	</item>	<item>	сохраниться	</item>	<item>	время	</item>	<item>	Без году неделя (неделю) 	</item>	<item>	"Форрест Гамп (1994)
-        Forrest Gump"	</item>	</string-array>
-    <string-array name='card4'>	<item>	ситуация	</item>	<item>	воздух	</item>	<item>	господь	</item>	<item>	осуществляться	</item>	<item>	вынести	</item>	<item>	дело	</item>	<item>	Без лишних слов 	</item>	<item>	"Интерстеллар (2014)
-        Interstellar"	</item>	</string-array>
-    <string-array name='card5'>	<item>	роль	</item>	<item>	характер	</item>	<item>	майор	</item>	<item>	дышать	</item>	<item>	отказываться	</item>	<item>	жизнь	</item>	<item>	Без пяти минут 	</item>	<item>	"Список Шиндлера (1993)
-        Schindler's List"	</item>	</string-array>
-    <string-array name='card6'>	<item>	рубль	</item>	<item>	борьба	</item>	<item>	конференция	</item>	<item>	описать	</item>	<item>	заглянуть	</item>	<item>	день	</item>	<item>	Без сучка без задоринки 	</item>	<item>	"1+1 (2011)
-        Intouchables"	</item>	</string-array>
-    <string-array name='card7'>	<item>	смысл	</item>	<item>	использование	</item>	<item>	потолок	</item>	<item>	прожить	</item>	<item>	защищать	</item>	<item>	рука	</item>	<item>	Белый свет	</item>	<item>	"Король Лев (1994)
-        The Lion King"	</item>	</string-array>
-    <string-array name='card8'>	<item>	состояние	</item>	<item>	размер	</item>	<item>	библиотека	</item>	<item>	оценить	</item>	<item>	основать	</item>	<item>	раз	</item>	<item>	Битый час	</item>	<item>	"Леон (1994)
-        Léon"	</item>	</string-array>
-    <string-array name='card9'>	<item>	квартира	</item>	<item>	образование	</item>	<item>	помощник	</item>	<item>	рассмотреть	</item>	<item>	лишить	</item>	<item>	работа	</item>	<item>	Бить баклуши 	</item>	<item>	"Начало (2010)
-        Inception"	</item>	</string-array>
-    <string-array name='card10'>	<item>	орган	</item>	<item>	мальчик	</item>	<item>	конструкция	</item>	<item>	проводиться	</item>	<item>	пожать	</item>	<item>	слово	</item>	<item>	Бить ключом 	</item>	<item>	"Бойцовский клуб (1999)
-        Fight Club"	</item>	</string-array>
-    <string-array name='card11'>	<item>	внимание	</item>	<item>	кровь	</item>	<item>	отдых	</item>	<item>	лечь	</item>	<item>	уезжать	</item>	<item>	место	</item>	<item>	Ближе к делу 	</item>	<item>	"Жизнь прекрасна (1997)
-        La Vita è bella"	</item>	</string-array>
+    <string-array name='card1'>	<item>	письмо	</item>	<item>	фильм	</item>	<item>	кость	</item>	<item>	организовать	</item>	<item>	потребовать	</item>	<item>	год	</item>	<item>	Альфа и омега 	</item>	<item>	Побег из Шоушенка (1994)	</item>	</string-array>
+    <string-array name='card2'>	<item>	утро	</item>	<item>	край	</item>	<item>	спорт	</item>	<item>	доказать	</item>	<item>	жалеть	</item>	<item>	человек	</item>	<item>	Ахиллесова пята 	</item>	<item>	Зеленая миля (1999)	</item>	</string-array>
+    <string-array name='card3'>	<item>	помощь	</item>	<item>	гость	</item>	<item>	кредит	</item>	<item>	приносить	</item>	<item>	сохраниться	</item>	<item>	время	</item>	<item>	Без году неделя (неделю) 	</item>	<item>	Форрест Гамп (1994)	</item>	</string-array>
+    <string-array name='card4'>	<item>	ситуация	</item>	<item>	воздух	</item>	<item>	господь	</item>	<item>	осуществляться	</item>	<item>	вынести	</item>	<item>	дело	</item>	<item>	Без лишних слов 	</item>	<item>	Интерстеллар (2014)	</item>	</string-array>
+    <string-array name='card5'>	<item>	роль	</item>	<item>	характер	</item>	<item>	майор	</item>	<item>	дышать	</item>	<item>	отказываться	</item>	<item>	жизнь	</item>	<item>	Без пяти минут 	</item>	<item>	Список Шиндлера (1993)	</item>	</string-array>
+    <string-array name='card6'>	<item>	рубль	</item>	<item>	борьба	</item>	<item>	конференция	</item>	<item>	описать	</item>	<item>	заглянуть	</item>	<item>	день	</item>	<item>	Без сучка без задоринки 	</item>	<item>	1+1 (2011)	</item>	</string-array>
+    <string-array name='card7'>	<item>	смысл	</item>	<item>	использование	</item>	<item>	потолок	</item>	<item>	прожить	</item>	<item>	защищать	</item>	<item>	рука	</item>	<item>	Белый свет	</item>	<item>	Король Лев (1994)	</item>	</string-array>
+    <string-array name='card8'>	<item>	состояние	</item>	<item>	размер	</item>	<item>	библиотека	</item>	<item>	оценить	</item>	<item>	основать	</item>	<item>	раз	</item>	<item>	Битый час	</item>	<item>	Леон (1994)	</item>	</string-array>
+    <string-array name='card9'>	<item>	квартира	</item>	<item>	образование	</item>	<item>	помощник	</item>	<item>	рассмотреть	</item>	<item>	лишить	</item>	<item>	работа	</item>	<item>	Бить баклуши 	</item>	<item>	Начало (2010)	</item>	</string-array>
+    <string-array name='card10'>	<item>	орган	</item>	<item>	мальчик	</item>	<item>	конструкция	</item>	<item>	проводиться	</item>	<item>	пожать	</item>	<item>	слово	</item>	<item>	Бить ключом 	</item>	<item>	Бойцовский клуб (1999)	</item>	</string-array>
+    <string-array name='card11'>	<item>	внимание	</item>	<item>	кровь	</item>	<item>	отдых	</item>	<item>	лечь	</item>	<item>	уезжать	</item>	<item>	место	</item>	<item>	Ближе к делу 	</item>	<item>	Жизнь прекрасна (1997)	</item>	</string-array>
     <string-array name='card12'>	<item>	тело	</item>	<item>	район	</item>	<item>	ручка	</item>	<item>	превратиться	</item>	<item>	воскликнуть	</item>	<item>	лицо	</item>	<item>	Бок о бок 	</item>	<item>	Иван Васильевич меняет профессию (1973)	</item>	</string-array>
-    <string-array name='card13'>	<item>	труд	</item>	<item>	небо	</item>	<item>	металл	</item>	<item>	выпустить	</item>	<item>	дрожать	</item>	<item>	друг	</item>	<item>	Более или менее 	</item>	<item>	"Достучаться до небес (1997)
-        Knockin' on Heaven's Door"	</item>	</string-array>
-    <string-array name='card14'>	<item>	сын	</item>	<item>	армия	</item>	<item>	молоко	</item>	<item>	ударить	</item>	<item>	сообщать	</item>	<item>	глаз	</item>	<item>	Болеть душой 	</item>	<item>	"Крестный отец (1972)
-        The Godfather"	</item>	</string-array>
-    <string-array name='card15'>	<item>	мера	</item>	<item>	класс	</item>	<item>	прокурор	</item>	<item>	проснуться	</item>	<item>	жениться	</item>	<item>	вопрос	</item>	<item>	Брать быка за рога 	</item>	<item>	"Престиж (2006)
-        The Prestige"	</item>	</string-array>
-    <string-array name='card16'>	<item>	смерть	</item>	<item>	представитель	</item>	<item>	транспорт	</item>	<item>	открыться	</item>	<item>	лезть	</item>	<item>	дом	</item>	<item>	Брать за душу 	</item>	<item>	"Игры разума (2001)
-        A Beautiful Mind"	</item>	</string-array>
-    <string-array name='card17'>	<item>	рынок	</item>	<item>	участие	</item>	<item>	поэзия	</item>	<item>	способствовать	</item>	<item>	волноваться	</item>	<item>	сторона	</item>	<item>	Брать пример 	</item>	<item>	"Криминальное чтиво (1994)
-        Pulp Fiction"	</item>	</string-array>
+    <string-array name='card13'>	<item>	труд	</item>	<item>	небо	</item>	<item>	металл	</item>	<item>	выпустить	</item>	<item>	дрожать	</item>	<item>	друг	</item>	<item>	Более или менее 	</item>	<item>	Достучаться до небес (1997)	</item>	</string-array>
+    <string-array name='card14'>	<item>	сын	</item>	<item>	армия	</item>	<item>	молоко	</item>	<item>	ударить	</item>	<item>	сообщать	</item>	<item>	глаз	</item>	<item>	Болеть душой 	</item>	<item>	Крестный отец (1972)	</item>	</string-array>
+    <string-array name='card15'>	<item>	мера	</item>	<item>	класс	</item>	<item>	прокурор	</item>	<item>	проснуться	</item>	<item>	жениться	</item>	<item>	вопрос	</item>	<item>	Брать быка за рога 	</item>	<item>	Престиж (2006)	</item>	</string-array>
+    <string-array name='card16'>	<item>	смерть	</item>	<item>	представитель	</item>	<item>	транспорт	</item>	<item>	открыться	</item>	<item>	лезть	</item>	<item>	дом	</item>	<item>	Брать за душу 	</item>	<item>	Игры разума (2001)	</item>	</string-array>
+    <string-array name='card17'>	<item>	рынок	</item>	<item>	участие	</item>	<item>	поэзия	</item>	<item>	способствовать	</item>	<item>	волноваться	</item>	<item>	сторона	</item>	<item>	Брать пример 	</item>	<item>	Криминальное чтиво (1994)	</item>	</string-array>
     <string-array name='card18'>	<item>	программа	</item>	<item>	девочка	</item>	<item>	соединение	</item>	<item>	научиться	</item>	<item>	поразить	</item>	<item>	страна	</item>	<item>	Брать себя в руки 	</item>	<item>	Операция «Ы» и другие приключения Шурика (1965)	</item>	</string-array>
-    <string-array name='card19'>	<item>	задача	</item>	<item>	политика	</item>	<item>	краска	</item>	<item>	умирать	</item>	<item>	велеть	</item>	<item>	мир	</item>	<item>	Браться за ум	</item>	<item>	"Властелин колец: Возвращение Короля (2003)
-        The Lord of the Rings: The Return of the King"	</item>	</string-array>
-    <string-array name='card20'>	<item>	предприятие	</item>	<item>	герой	</item>	<item>	расстояние	</item>	<item>	стрелять	</item>	<item>	убивать	</item>	<item>	случай	</item>	<item>	Бросать слова на ветер 	</item>	<item>	"Гладиатор (2000)
-        Gladiator"	</item>	</string-array>
-    <string-array name='card21'>	<item>	окно	</item>	<item>	картина	</item>	<item>	мечта	</item>	<item>	обойтись	</item>	<item>	решиться	</item>	<item>	голова	</item>	<item>	В большинстве случаев	</item>	<item>	"Карты, деньги, два ствола (1998)
-        Lock, Stock and Two Smoking Barrels"	</item>	</string-array>
-    <string-array name='card22'>	<item>	разговор	</item>	<item>	доллар	</item>	<item>	село	</item>	<item>	записать	</item>	<item>	добраться	</item>	<item>	ребенок	</item>	<item>	В глубине души	</item>	<item>	"Назад в будущее (1985)
-        Back to the Future"	</item>	</string-array>
-    <string-array name='card23'>	<item>	правительство	</item>	<item>	спина	</item>	<item>	еда	</item>	<item>	определяться	</item>	<item>	задуматься	</item>	<item>	сила	</item>	<item>	В два счёта	</item>	<item>	"Пианист (2002)
-        The Pianist"	</item>	</string-array>
-    <string-array name='card24'>	<item>	семья	</item>	<item>	территория	</item>	<item>	зло	</item>	<item>	подарить	</item>	<item>	нуждаться	</item>	<item>	конец	</item>	<item>	В добрый путь	</item>	<item>	"Поймай меня, если сможешь (2002)
-        Catch Me If You Can"	</item>	</string-array>
-    <string-array name='card25'>	<item>	производство	</item>	<item>	пол	</item>	<item>	подразделение	</item>	<item>	приняться	</item>	<item>	позвать	</item>	<item>	вид	</item>	<item>	В добрый час!	</item>	<item>	"Отступники (2006)
-        The Departed"	</item>	</string-array>
+    <string-array name='card19'>	<item>	задача	</item>	<item>	политика	</item>	<item>	краска	</item>	<item>	умирать	</item>	<item>	велеть	</item>	<item>	мир	</item>	<item>	Браться за ум	</item>	<item>	Властелин колец: Возвращение Короля (2003)	</item>	</string-array>
+    <string-array name='card20'>	<item>	предприятие	</item>	<item>	герой	</item>	<item>	расстояние	</item>	<item>	стрелять	</item>	<item>	убивать	</item>	<item>	случай	</item>	<item>	Бросать слова на ветер 	</item>	<item>	Гладиатор (2000)	</item>	</string-array>
+    <string-array name='card21'>	<item>	окно	</item>	<item>	картина	</item>	<item>	мечта	</item>	<item>	обойтись	</item>	<item>	решиться	</item>	<item>	голова	</item>	<item>	В большинстве случаев	</item>	<item>	Карты, деньги, два ствола (1998)	</item>	</string-array>
+    <string-array name='card22'>	<item>	разговор	</item>	<item>	доллар	</item>	<item>	село	</item>	<item>	записать	</item>	<item>	добраться	</item>	<item>	ребенок	</item>	<item>	В глубине души	</item>	<item>	Назад в будущее (1985)	</item>	</string-array>
+    <string-array name='card23'>	<item>	правительство	</item>	<item>	спина	</item>	<item>	еда	</item>	<item>	определяться	</item>	<item>	задуматься	</item>	<item>	сила	</item>	<item>	В два счёта	</item>	<item>	Пианист (2002)	</item>	</string-array>
+    <string-array name='card24'>	<item>	семья	</item>	<item>	территория	</item>	<item>	зло	</item>	<item>	подарить	</item>	<item>	нуждаться	</item>	<item>	конец	</item>	<item>	В добрый путь	</item>	<item>	Поймай меня, если сможешь (2002)	</item>	</string-array>
+    <string-array name='card25'>	<item>	производство	</item>	<item>	пол	</item>	<item>	подразделение	</item>	<item>	приняться	</item>	<item>	позвать	</item>	<item>	вид	</item>	<item>	В добрый час!	</item>	<item>	Отступники (2006)	</item>	</string-array>
     <string-array name='card26'>	<item>	информация	</item>	<item>	поле	</item>	<item>	сюжет	</item>	<item>	заставлять	</item>	<item>	удивляться	</item>	<item>	система	</item>	<item>	В конце концов	</item>	<item>	В бой идут одни «старики» (1973)	</item>	</string-array>
-    <string-array name='card27'>	<item>	положение	</item>	<item>	изменение	</item>	<item>	рубеж	</item>	<item>	схватить	</item>	<item>	здравствовать	</item>	<item>	часть	</item>	<item>	В лучшем случае	</item>	<item>	"Властелин колец: Братство кольца (2001)
-        The Lord of the Rings: The Fellowship of the Ring"	</item>	</string-array>
+    <string-array name='card27'>	<item>	положение	</item>	<item>	изменение	</item>	<item>	рубеж	</item>	<item>	схватить	</item>	<item>	здравствовать	</item>	<item>	часть	</item>	<item>	В лучшем случае	</item>	<item>	Властелин колец: Братство кольца (2001)	</item>	</string-array>
     <string-array name='card28'>	<item>	центр	</item>	<item>	направление	</item>	<item>	сигнал	</item>	<item>	пропасть	</item>	<item>	передавать	</item>	<item>	город	</item>	<item>	В любом случае	</item>	<item>	Бриллиантовая рука (1968)	</item>	</string-array>
-    <string-array name='card29'>	<item>	ответ	</item>	<item>	рисунок	</item>	<item>	атмосфера	</item>	<item>	выдать	</item>	<item>	скрывать	</item>	<item>	отношение	</item>	<item>	В мгновение ока	</item>	<item>	"Большой куш (2000)
-        Snatch."	</item>	</string-array>
-    <string-array name='card30'>	<item>	муж	</item>	<item>	течение	</item>	<item>	крест	</item>	<item>	извинить	</item>	<item>	запомнить	</item>	<item>	женщина	</item>	<item>	В огонь и в воду	</item>	<item>	"Властелин колец: Две крепости (2002)
-        The Lord of the Rings: The Two Towers"	</item>	</string-array>
-    <string-array name='card31'>	<item>	автор	</item>	<item>	церковь	</item>	<item>	вес	</item>	<item>	разобраться	</item>	<item>	подавать	</item>	<item>	деньги	</item>	<item>	Во весь дух 	</item>	<item>	"Американская история Х (1998)
-        American History X"	</item>	</string-array>
-    <string-array name='card32'>	<item>	стена	</item>	<item>	банк	</item>	<item>	взрыв	</item>	<item>	опустить	</item>	<item>	покинуть	</item>	<item>	земля	</item>	<item>	Во что бы то ни стало 	</item>	<item>	"Матрица (1999)
-        The Matrix"	</item>	</string-array>
-    <string-array name='card33'>	<item>	интерес	</item>	<item>	сцена	</item>	<item>	контакт	</item>	<item>	страдать	</item>	<item>	послушать	</item>	<item>	машина	</item>	<item>	Волосы становятся дыбом 	</item>	<item>	"Пролетая над гнездом кукушки (1975)
-        One Flew Over the Cuckoo's Nest"	</item>	</string-array>
-    <string-array name='card34'>	<item>	федерация	</item>	<item>	население	</item>	<item>	сигарета	</item>	<item>	заходить	</item>	<item>	пережить	</item>	<item>	вода	</item>	<item>	Вставлять палки в колёса 	</item>	<item>	"Остров проклятых (2009)
-        Shutter Island"	</item>	</string-array>
-    <string-array name='card35'>	<item>	правило	</item>	<item>	большинство	</item>	<item>	восторг	</item>	<item>	побежать	</item>	<item>	продолжить	</item>	<item>	отец	</item>	<item>	Делать большие глаза 	</item>	<item>	"Пробуждение (1990)
-        Awakenings"	</item>	</string-array>
-    <string-array name='card36'>	<item>	управление	</item>	<item>	музыка	</item>	<item>	золото	</item>	<item>	броситься	</item>	<item>	раздаться	</item>	<item>	проблема	</item>	<item>	День за днём	</item>	<item>	"ВАЛЛ·И (2008)
-        WALL·E"	</item>	</string-array>
-    <string-array name='card37'>	<item>	мужчина	</item>	<item>	правда	</item>	<item>	почва	</item>	<item>	гулять	</item>	<item>	оказывать	</item>	<item>	час	</item>	<item>	День и ночь	</item>	<item>	"Хористы (2004)
-        Les Choristes"	</item>	</string-array>
-    <string-array name='card38'>	<item>	идея	</item>	<item>	свобода	</item>	<item>	премия	</item>	<item>	бегать	</item>	<item>	превышать	</item>	<item>	право	</item>	<item>	День открытых дверей	</item>	<item>	"Пираты Карибского моря: Проклятие Черной жемчужины (2003)
-        Pirates of the Caribbean: The Curse of the Black Pearl"	</item>	</string-array>
-    <string-array name='card39'>	<item>	партия	</item>	<item>	память	</item>	<item>	король	</item>	<item>	засмеяться	</item>	<item>	ловить	</item>	<item>	нога	</item>	<item>	Держать камень за пазухой 	</item>	<item>	"Темный рыцарь (2008)
-        The Dark Knight"	</item>	</string-array>
-    <string-array name='card40'>	<item>	совет	</item>	<item>	команда	</item>	<item>	подъезд	</item>	<item>	найтись	</item>	<item>	забрать	</item>	<item>	решение	</item>	<item>	Держать себя в руках	</item>	<item>	"Огни большого города (1931)
-        City Lights"	</item>	</string-array>
-    <string-array name='card41'>	<item>	счет	</item>	<item>	союз	</item>	<item>	шанс	</item>	<item>	приказать	</item>	<item>	испугаться	</item>	<item>	дверь	</item>	<item>	Держать слово	</item>	<item>	"Запах женщины (1992)
-        Scent of a Woman"	</item>	</string-array>
-    <string-array name='card42'>	<item>	сердце	</item>	<item>	врач	</item>	<item>	автомат	</item>	<item>	устать	</item>	<item>	утвердить	</item>	<item>	образ	</item>	<item>	Держать язык за зубами	</item>	<item>	"Хатико: Самый верный друг (2008)
-        Hachi: A Dog's Tale"	</item>	</string-array>
+    <string-array name='card29'>	<item>	ответ	</item>	<item>	рисунок	</item>	<item>	атмосфера	</item>	<item>	выдать	</item>	<item>	скрывать	</item>	<item>	отношение	</item>	<item>	В мгновение ока	</item>	<item>	Большой куш (2000)	</item>	</string-array>
+    <string-array name='card30'>	<item>	муж	</item>	<item>	течение	</item>	<item>	крест	</item>	<item>	извинить	</item>	<item>	запомнить	</item>	<item>	женщина	</item>	<item>	В огонь и в воду	</item>	<item>	Властелин колец: Две крепости (2002)	</item>	</string-array>
+    <string-array name='card31'>	<item>	автор	</item>	<item>	церковь	</item>	<item>	вес	</item>	<item>	разобраться	</item>	<item>	подавать	</item>	<item>	деньги	</item>	<item>	Во весь дух 	</item>	<item>	Американская история Х (1998)	</item>	</string-array>
+    <string-array name='card32'>	<item>	стена	</item>	<item>	банк	</item>	<item>	взрыв	</item>	<item>	опустить	</item>	<item>	покинуть	</item>	<item>	земля	</item>	<item>	Во что бы то ни стало 	</item>	<item>	Матрица (1999)	</item>	</string-array>
+    <string-array name='card33'>	<item>	интерес	</item>	<item>	сцена	</item>	<item>	контакт	</item>	<item>	страдать	</item>	<item>	послушать	</item>	<item>	машина	</item>	<item>	Волосы становятся дыбом 	</item>	<item>	Пролетая над гнездом кукушки (1975)	</item>	</string-array>
+    <string-array name='card34'>	<item>	федерация	</item>	<item>	население	</item>	<item>	сигарета	</item>	<item>	заходить	</item>	<item>	пережить	</item>	<item>	вода	</item>	<item>	Вставлять палки в колёса 	</item>	<item>	Остров проклятых (2009)	</item>	</string-array>
+    <string-array name='card35'>	<item>	правило	</item>	<item>	большинство	</item>	<item>	восторг	</item>	<item>	побежать	</item>	<item>	продолжить	</item>	<item>	отец	</item>	<item>	Делать большие глаза 	</item>	<item>	Пробуждение (1990)	</item>	</string-array>
+    <string-array name='card36'>	<item>	управление	</item>	<item>	музыка	</item>	<item>	золото	</item>	<item>	броситься	</item>	<item>	раздаться	</item>	<item>	проблема	</item>	<item>	День за днём	</item>	<item>	ВАЛЛ·И (2008)	</item>	</string-array>
+    <string-array name='card37'>	<item>	мужчина	</item>	<item>	правда	</item>	<item>	почва	</item>	<item>	гулять	</item>	<item>	оказывать	</item>	<item>	час	</item>	<item>	День и ночь	</item>	<item>	Хористы (2004)	</item>	</string-array>
+    <string-array name='card38'>	<item>	идея	</item>	<item>	свобода	</item>	<item>	премия	</item>	<item>	бегать	</item>	<item>	превышать	</item>	<item>	право	</item>	<item>	День открытых дверей	</item>	<item>	Пираты Карибского моря: Проклятие Черной жемчужины (2003)	</item>	</string-array>
+    <string-array name='card39'>	<item>	партия	</item>	<item>	память	</item>	<item>	король	</item>	<item>	засмеяться	</item>	<item>	ловить	</item>	<item>	нога	</item>	<item>	Держать камень за пазухой 	</item>	<item>	Темный рыцарь (2008)	</item>	</string-array>
+    <string-array name='card40'>	<item>	совет	</item>	<item>	команда	</item>	<item>	подъезд	</item>	<item>	найтись	</item>	<item>	забрать	</item>	<item>	решение	</item>	<item>	Держать себя в руках	</item>	<item>	Огни большого города (1931)	</item>	</string-array>
+    <string-array name='card41'>	<item>	счет	</item>	<item>	союз	</item>	<item>	шанс	</item>	<item>	приказать	</item>	<item>	испугаться	</item>	<item>	дверь	</item>	<item>	Держать слово	</item>	<item>	Запах женщины (1992)	</item>	</string-array>
+    <string-array name='card42'>	<item>	сердце	</item>	<item>	врач	</item>	<item>	автомат	</item>	<item>	устать	</item>	<item>	утвердить	</item>	<item>	образ	</item>	<item>	Держать язык за зубами	</item>	<item>	Хатико: Самый верный друг (2008)	</item>	</string-array>
     <string-array name='card43'>	<item>	движение	</item>	<item>	договор	</item>	<item>	заказ	</item>	<item>	повезти	</item>	<item>	применять	</item>	<item>	история	</item>	<item>	Диву даваться	</item>	<item>	Джентльмены удачи (1971)	</item>	</string-array>
-    <string-array name='card44'>	<item>	вещь	</item>	<item>	дерево	</item>	<item>	мальчишка	</item>	<item>	рассчитывать	</item>	<item>	убедиться	</item>	<item>	власть	</item>	<item>	Днём с огнём	</item>	<item>	"Эта замечательная жизнь (1946)
-        It's a Wonderful Life"	</item>	</string-array>
-    <string-array name='card45'>	<item>	материал	</item>	<item>	факт	</item>	<item>	очки	</item>	<item>	опубликовать	</item>	<item>	заменить	</item>	<item>	закон	</item>	<item>	До скорого свидания	</item>	<item>	"В джазе только девушки (1959)
-        Some Like It Hot"	</item>	</string-array>
-    <string-array name='card46'>	<item>	неделя	</item>	<item>	хозяин	</item>	<item>	миг	</item>	<item>	радоваться	</item>	<item>	приглашать	</item>	<item>	война	</item>	<item>	Знать своё место	</item>	<item>	"Унесённые призраками (2001)
-        Sen to Chihiro no kamikakushi"	</item>	</string-array>
-    <string-array name='card47'>	<item>	чувство	</item>	<item>	природа	</item>	<item>	штука	</item>	<item>	выразить	</item>	<item>	привлечь	</item>	<item>	бог	</item>	<item>	Знать себе цену	</item>	<item>	"Хороший, плохой, злой (1966)
-        Il Buono, il brutto, il cattivo"	</item>	</string-array>
-    <string-array name='card48'>	<item>	глава	</item>	<item>	угол	</item>	<item>	чтение	</item>	<item>	закончиться	</item>	<item>	везти	</item>	<item>	голос	</item>	<item>	Знать цену	</item>	<item>	"12 разгневанных мужчин (1957)
-        12 Angry Men"	</item>	</string-array>
-    <string-array name='card49'>	<item>	наука	</item>	<item>	телефон	</item>	<item>	поселок	</item>	<item>	обернуться	</item>	<item>	убрать	</item>	<item>	тысяча	</item>	<item>	Золотая середина	</item>	<item>	"Титаник (1997)
-        Titanic"	</item>	</string-array>
+    <string-array name='card44'>	<item>	вещь	</item>	<item>	дерево	</item>	<item>	мальчишка	</item>	<item>	рассчитывать	</item>	<item>	убедиться	</item>	<item>	власть	</item>	<item>	Днём с огнём	</item>	<item>	Эта замечательная жизнь (1946)	</item>	</string-array>
+    <string-array name='card45'>	<item>	материал	</item>	<item>	факт	</item>	<item>	очки	</item>	<item>	опубликовать	</item>	<item>	заменить	</item>	<item>	закон	</item>	<item>	До скорого свидания	</item>	<item>	В джазе только девушки (1959)	</item>	</string-array>
+    <string-array name='card46'>	<item>	неделя	</item>	<item>	хозяин	</item>	<item>	миг	</item>	<item>	радоваться	</item>	<item>	приглашать	</item>	<item>	война	</item>	<item>	Знать своё место	</item>	<item>	Унесённые призраками (2001)	</item>	</string-array>
+    <string-array name='card47'>	<item>	чувство	</item>	<item>	природа	</item>	<item>	штука	</item>	<item>	выразить	</item>	<item>	привлечь	</item>	<item>	бог	</item>	<item>	Знать себе цену	</item>	<item>	Хороший, плохой, злой (1966)	</item>	</string-array>
+    <string-array name='card48'>	<item>	глава	</item>	<item>	угол	</item>	<item>	чтение	</item>	<item>	закончиться	</item>	<item>	везти	</item>	<item>	голос	</item>	<item>	Знать цену	</item>	<item>	12 разгневанных мужчин (1957)	</item>	</string-array>
+    <string-array name='card49'>	<item>	наука	</item>	<item>	телефон	</item>	<item>	поселок	</item>	<item>	обернуться	</item>	<item>	убрать	</item>	<item>	тысяча	</item>	<item>	Золотая середина	</item>	<item>	Титаник (1997)	</item>	</string-array>
     <string-array name='card50'>	<item>	ряд	</item>	<item>	позиция	</item>	<item>	свидетель	</item>	<item>	отпустить	</item>	<item>	предположить	</item>	<item>	книга	</item>	<item>	Золотые руки	</item>	<item>	Шерлок Холмс и доктор Ватсон: Собака Баскервилей (1981)	</item>	</string-array>
-    <string-array name='card51'>	<item>	газета	</item>	<item>	двор	</item>	<item>	ставка	</item>	<item>	заговорить	</item>	<item>	летать	</item>	<item>	возможность	</item>	<item>	И в ус не дует 	</item>	<item>	"Крестный отец 2 (1974)
-        The Godfather: Part II"	</item>	</string-array>
+    <string-array name='card51'>	<item>	газета	</item>	<item>	двор	</item>	<item>	ставка	</item>	<item>	заговорить	</item>	<item>	летать	</item>	<item>	возможность	</item>	<item>	И в ус не дует 	</item>	<item>	Крестный отец 2 (1974)	</item>	</string-array>
     <string-array name='card52'>	<item>	причина	</item>	<item>	писатель	</item>	<item>	сумка	</item>	<item>	внести	</item>	<item>	признавать	</item>	<item>	результат	</item>	<item>	Из года в год	</item>	<item>	...А зори здесь тихие (1972)	</item>	</string-array>
-    <string-array name='card53'>	<item>	плечо	</item>	<item>	самолет	</item>	<item>	удивление	</item>	<item>	устраивать	</item>	<item>	повести	</item>	<item>	ночь	</item>	<item>	Из первых рук	</item>	<item>	"Джанго освобожденный (2012)
-        Django Unchained"	</item>	</string-array>
-    <string-array name='card54'>	<item>	цена	</item>	<item>	объем	</item>	<item>	хвост	</item>	<item>	выясниться	</item>	<item>	подчеркнуть	</item>	<item>	стол	</item>	<item>	Из рук в руки	</item>	<item>	"Как приручить дракона (2010)
-        How to Train Your Dragon"	</item>	</string-array>
-    <string-array name='card55'>	<item>	план	</item>	<item>	род	</item>	<item>	песок	</item>	<item>	догадаться	</item>	<item>	покрыть	</item>	<item>	имя	</item>	<item>	Из рук вон плохо 	</item>	<item>	"Семь (1995)
-        Se7en"	</item>	</string-array>
-    <string-array name='card56'>	<item>	речь	</item>	<item>	солнце	</item>	<item>	поворот	</item>	<item>	изучать	</item>	<item>	предпочитать	</item>	<item>	область	</item>	<item>	Как зеницу ока 	</item>	<item>	"Молчание ягнят (1990)
-        The Silence of the Lambs"	</item>	</string-array>
+    <string-array name='card53'>	<item>	плечо	</item>	<item>	самолет	</item>	<item>	удивление	</item>	<item>	устраивать	</item>	<item>	повести	</item>	<item>	ночь	</item>	<item>	Из первых рук	</item>	<item>	Джанго освобожденный (2012)	</item>	</string-array>
+    <string-array name='card54'>	<item>	цена	</item>	<item>	объем	</item>	<item>	хвост	</item>	<item>	выясниться	</item>	<item>	подчеркнуть	</item>	<item>	стол	</item>	<item>	Из рук в руки	</item>	<item>	Как приручить дракона (2010)	</item>	</string-array>
+    <string-array name='card55'>	<item>	план	</item>	<item>	род	</item>	<item>	песок	</item>	<item>	догадаться	</item>	<item>	покрыть	</item>	<item>	имя	</item>	<item>	Из рук вон плохо 	</item>	<item>	Семь (1995)	</item>	</string-array>
+    <string-array name='card56'>	<item>	речь	</item>	<item>	солнце	</item>	<item>	поворот	</item>	<item>	изучать	</item>	<item>	предпочитать	</item>	<item>	область	</item>	<item>	Как зеницу ока 	</item>	<item>	Молчание ягнят (1990)	</item>	</string-array>
     <string-array name='card57'>	<item>	точка	</item>	<item>	вера	</item>	<item>	возвращение	</item>	<item>	интересовать	</item>	<item>	прислать	</item>	<item>	статья	</item>	<item>	Как ни в чём не бывало	</item>	<item>	Кавказская пленница, или Новые приключения Шурика (1966)	</item>	</string-array>
-    <string-array name='card58'>	<item>	основа	</item>	<item>	берег	</item>	<item>	мгновение	</item>	<item>	поднимать	</item>	<item>	жаловаться	</item>	<item>	число	</item>	<item>	Комар носа (носу) не подточит 	</item>	<item>	"Нокдаун (2005)
-        Cinderella Man"	</item>	</string-array>
-    <string-array name='card59'>	<item>	товарищ	</item>	<item>	спектакль	</item>	<item>	статус	</item>	<item>	развиваться	</item>	<item>	решаться	</item>	<item>	компания	</item>	<item>	Кот наплакал 	</item>	<item>	"Шоу Трумана (1998)
-        The Truman Show"	</item>	</string-array>
-    <string-array name='card60'>	<item>	культура	</item>	<item>	фирма	</item>	<item>	озеро	</item>	<item>	обращать	</item>	<item>	успокоиться	</item>	<item>	народ	</item>	<item>	Кошки скребут на сердце	</item>	<item>	"Исчезнувшая (2014)
-        Gone Girl"	</item>	</string-array>
-    <string-array name='card61'>	<item>	данные	</item>	<item>	способ	</item>	<item>	строй	</item>	<item>	подождать	</item>	<item>	исключить	</item>	<item>	жена	</item>	<item>	Краем глаза	</item>	<item>	"Игра (1997)
-        The Game"	</item>	</string-array>
+    <string-array name='card58'>	<item>	основа	</item>	<item>	берег	</item>	<item>	мгновение	</item>	<item>	поднимать	</item>	<item>	жаловаться	</item>	<item>	число	</item>	<item>	Комар носа (носу) не подточит 	</item>	<item>	Нокдаун (2005)	</item>	</string-array>
+    <string-array name='card59'>	<item>	товарищ	</item>	<item>	спектакль	</item>	<item>	статус	</item>	<item>	развиваться	</item>	<item>	решаться	</item>	<item>	компания	</item>	<item>	Кот наплакал 	</item>	<item>	Шоу Трумана (1998)	</item>	</string-array>
+    <string-array name='card60'>	<item>	культура	</item>	<item>	фирма	</item>	<item>	озеро	</item>	<item>	обращать	</item>	<item>	успокоиться	</item>	<item>	народ	</item>	<item>	Кошки скребут на сердце	</item>	<item>	Исчезнувшая (2014)	</item>	</string-array>
+    <string-array name='card61'>	<item>	данные	</item>	<item>	способ	</item>	<item>	строй	</item>	<item>	подождать	</item>	<item>	исключить	</item>	<item>	жена	</item>	<item>	Краем глаза	</item>	<item>	Игра (1997)	</item>	</string-array>
     <string-array name='card62'>	<item>	мнение	</item>	<item>	завод	</item>	<item>	параметр	</item>	<item>	продавать	</item>	<item>	отсутствовать	</item>	<item>	группа	</item>	<item>	Краем уха	</item>	<item>	Шерлок Холмс и доктор Ватсон: Знакомство (1979)	</item>	</string-array>
-    <string-array name='card63'>	<item>	документ	</item>	<item>	цвет	</item>	<item>	сказка	</item>	<item>	бросать	</item>	<item>	владеть	</item>	<item>	развитие	</item>	<item>	Куда глаза глядит	</item>	<item>	"Храброе сердце (1995)
-        Braveheart"	</item>	</string-array>
+    <string-array name='card63'>	<item>	документ	</item>	<item>	цвет	</item>	<item>	сказка	</item>	<item>	бросать	</item>	<item>	владеть	</item>	<item>	развитие	</item>	<item>	Куда глаза глядит	</item>	<item>	Храброе сердце (1995)	</item>	</string-array>
     <string-array name='card64'>	<item>	институт	</item>	<item>	журнал	</item>	<item>	тенденция	</item>	<item>	поддержать	</item>	<item>	торчать	</item>	<item>	процесс	</item>	<item>	Лодыря гонять 	</item>	<item>	Собачье сердце (1988)	</item>	</string-array>
-    <string-array name='card65'>	<item>	ход	</item>	<item>	руководитель	</item>	<item>	вина	</item>	<item>	запретить	</item>	<item>	постараться	</item>	<item>	суд	</item>	<item>	Мухи не обидит 	</item>	<item>	"Прислуга (2011)
-        The Help"	</item>	</string-array>
+    <string-array name='card65'>	<item>	ход	</item>	<item>	руководитель	</item>	<item>	вина	</item>	<item>	запретить	</item>	<item>	постараться	</item>	<item>	суд	</item>	<item>	Мухи не обидит 	</item>	<item>	Прислуга (2011)	</item>	</string-array>
     <string-array name='card66'>	<item>	проект	</item>	<item>	специалист	</item>	<item>	дыхание	</item>	<item>	отмечать	</item>	<item>	соединить	</item>	<item>	условие	</item>	<item>	Не лезет за словом в карман 	</item>	<item>	Офицеры (1971)	</item>	</string-array>
-    <string-array name='card67'>	<item>	встреча	</item>	<item>	оценка	</item>	<item>	версия	</item>	<item>	отойти	</item>	<item>	убедить	</item>	<item>	средство	</item>	<item>	Не покладая рук 	</item>	<item>	"Малыш (1921)
-        The Kid"	</item>	</string-array>
-    <string-array name='card68'>	<item>	директор	</item>	<item>	регион	</item>	<item>	масштаб	</item>	<item>	ощущать	</item>	<item>	задавать	</item>	<item>	начало	</item>	<item>	Ни дать ни взять 	</item>	<item>	"В погоне за счастьем (2006)
-        The Pursuit of Happyness"	</item>	</string-array>
-    <string-array name='card69'>	<item>	срок	</item>	<item>	песня	</item>	<item>	монастырь	</item>	<item>	прибыть	</item>	<item>	заложить	</item>	<item>	свет	</item>	<item>	Ни пуха ни пера 	</item>	<item>	"Гонка (2013)
-        Rush"	</item>	</string-array>
-    <string-array name='card70'>	<item>	палец	</item>	<item>	процент	</item>	<item>	хозяйка	</item>	<item>	случаться	</item>	<item>	реализовать	</item>	<item>	пора	</item>	<item>	Ни рыба ни мясо 	</item>	<item>	"Терминатор 2: Судный день (1991)
-        Terminator 2: Judgment Day"	</item>	</string-array>
-    <string-array name='card71'>	<item>	опыт	</item>	<item>	родитель	</item>	<item>	дочка	</item>	<item>	сойти	</item>	<item>	выяснить	</item>	<item>	путь	</item>	<item>	Палец о палец не ударить	</item>	<item>	"Гран Торино (2008)
-        Gran Torino"	</item>	</string-array>
-    <string-array name='card72'>	<item>	служба	</item>	<item>	море	</item>	<item>	танец	</item>	<item>	поймать	</item>	<item>	исполнять	</item>	<item>	душа	</item>	<item>	Пальца в рот не клади	</item>	<item>	"Человек дождя (1988)
-        Rain Man"	</item>	</string-array>
+    <string-array name='card67'>	<item>	встреча	</item>	<item>	оценка	</item>	<item>	версия	</item>	<item>	отойти	</item>	<item>	убедить	</item>	<item>	средство	</item>	<item>	Не покладая рук 	</item>	<item>	Малыш (1921)	</item>	</string-array>
+    <string-array name='card68'>	<item>	директор	</item>	<item>	регион	</item>	<item>	масштаб	</item>	<item>	ощущать	</item>	<item>	задавать	</item>	<item>	начало	</item>	<item>	Ни дать ни взять 	</item>	<item>	В погоне за счастьем (2006)	</item>	</string-array>
+    <string-array name='card69'>	<item>	срок	</item>	<item>	песня	</item>	<item>	монастырь	</item>	<item>	прибыть	</item>	<item>	заложить	</item>	<item>	свет	</item>	<item>	Ни пуха ни пера 	</item>	<item>	Гонка (2013)	</item>	</string-array>
+    <string-array name='card70'>	<item>	палец	</item>	<item>	процент	</item>	<item>	хозяйка	</item>	<item>	случаться	</item>	<item>	реализовать	</item>	<item>	пора	</item>	<item>	Ни рыба ни мясо 	</item>	<item>	Терминатор 2: Судный день (1991)	</item>	</string-array>
+    <string-array name='card71'>	<item>	опыт	</item>	<item>	родитель	</item>	<item>	дочка	</item>	<item>	сойти	</item>	<item>	выяснить	</item>	<item>	путь	</item>	<item>	Палец о палец не ударить	</item>	<item>	Гран Торино (2008)	</item>	</string-array>
+    <string-array name='card72'>	<item>	служба	</item>	<item>	море	</item>	<item>	танец	</item>	<item>	поймать	</item>	<item>	исполнять	</item>	<item>	душа	</item>	<item>	Пальца в рот не клади	</item>	<item>	Человек дождя (1988)	</item>	</string-array>
     <string-array name='card73'>	<item>	судьба	</item>	<item>	требование	</item>	<item>	эксплуатация	</item>	<item>	заключить	</item>	<item>	общаться	</item>	<item>	уровень	</item>	<item>	Пальца в рот не клади 	</item>	<item>	Летят журавли (1957)	</item>	</string-array>
-    <string-array name='card74'>	<item>	девушка	</item>	<item>	основание	</item>	<item>	коммунист	</item>	<item>	признаться	</item>	<item>	повернуть	</item>	<item>	форма	</item>	<item>	Пальцем не трогать	</item>	<item>	"Балто (1995)
-        Balto"	</item>	</string-array>
-    <string-array name='card75'>	<item>	очередь	</item>	<item>	половина	</item>	<item>	пенсия	</item>	<item>	сомневаться	</item>	<item>	останавливаться	</item>	<item>	связь	</item>	<item>	Пальцем не шевельнуть	</item>	<item>	"Изгой (2000)
-        Cast Away"	</item>	</string-array>
+    <string-array name='card74'>	<item>	девушка	</item>	<item>	основание	</item>	<item>	коммунист	</item>	<item>	признаться	</item>	<item>	повернуть	</item>	<item>	форма	</item>	<item>	Пальцем не трогать	</item>	<item>	Балто (1995)	</item>	</string-array>
+    <string-array name='card75'>	<item>	очередь	</item>	<item>	половина	</item>	<item>	пенсия	</item>	<item>	сомневаться	</item>	<item>	останавливаться	</item>	<item>	связь	</item>	<item>	Пальцем не шевельнуть	</item>	<item>	Изгой (2000)	</item>	</string-array>
     <string-array name='card76'>	<item>	лес	</item>	<item>	роман	</item>	<item>	приятель	</item>	<item>	усмехнуться	</item>	<item>	совершать	</item>	<item>	минута	</item>	<item>	Передний край	</item>	<item>	Москва слезам не верит (1979)	</item>	</string-array>
     <string-array name='card77'>	<item>	состав	</item>	<item>	круг	</item>	<item>	объяснение	</item>	<item>	договориться	</item>	<item>	воевать	</item>	<item>	улица	</item>	<item>	Переливать из пустого в порожнее	</item>	<item>	Судьба человека (1959)	</item>	</string-array>
-    <string-array name='card78'>	<item>	член	</item>	<item>	анализ	</item>	<item>	набор	</item>	<item>	предоставить	</item>	<item>	выдавать	</item>	<item>	вечер	</item>	<item>	Переливать из пустого в порожнее 	</item>	<item>	"Однажды в Америке (1983)
-        Once Upon a Time in America"	</item>	</string-array>
-    <string-array name='card79'>	<item>	количество	</item>	<item>	стихи	</item>	<item>	производитель	</item>	<item>	удаваться	</item>	<item>	задать	</item>	<item>	качество	</item>	<item>	Платить той же монетой	</item>	<item>	"Шестое чувство (1999)
-        The Sixth Sense"	</item>	</string-array>
-    <string-array name='card80'>	<item>	событие	</item>	<item>	автомобиль	</item>	<item>	пыль	</item>	<item>	сходить	</item>	<item>	ненавидеть	</item>	<item>	мысль	</item>	<item>	Плечом к плечу	</item>	<item>	"Укрощение строптивого (1980)
-        Il bisbetico domato"	</item>	</string-array>
+    <string-array name='card78'>	<item>	член	</item>	<item>	анализ	</item>	<item>	набор	</item>	<item>	предоставить	</item>	<item>	выдавать	</item>	<item>	вечер	</item>	<item>	Переливать из пустого в порожнее 	</item>	<item>	Однажды в Америке (1983)	</item>	</string-array>
+    <string-array name='card79'>	<item>	количество	</item>	<item>	стихи	</item>	<item>	производитель	</item>	<item>	удаваться	</item>	<item>	задать	</item>	<item>	качество	</item>	<item>	Платить той же монетой	</item>	<item>	Шестое чувство (1999)	</item>	</string-array>
+    <string-array name='card80'>	<item>	событие	</item>	<item>	автомобиль	</item>	<item>	пыль	</item>	<item>	сходить	</item>	<item>	ненавидеть	</item>	<item>	мысль	</item>	<item>	Плечом к плечу	</item>	<item>	Укрощение строптивого (1980)	</item>	</string-array>
     <string-array name='card81'>	<item>	объект	</item>	<item>	экономика	</item>	<item>	философия	</item>	<item>	попадать	</item>	<item>	родить	</item>	<item>	дорога	</item>	<item>	Плыть по течению	</item>	<item>	Белый Бим Черное ухо (1976)	</item>	</string-array>
-    <string-array name='card82'>	<item>	зал	</item>	<item>	литература	</item>	<item>	мощность	</item>	<item>	пустить	</item>	<item>	наступать	</item>	<item>	мать	</item>	<item>	По горячим следам	</item>	<item>	"Римские каникулы (1953)
-        Roman Holiday"	</item>	</string-array>
-    <string-array name='card83'>	<item>	создание	</item>	<item>	бумага	</item>	<item>	обязательство	</item>	<item>	указывать	</item>	<item>	выявить	</item>	<item>	действие	</item>	<item>	По пальцам пересчитать	</item>	<item>	"Дневник памяти (2004)
-        The Notebook"	</item>	</string-array>
-    <string-array name='card84'>	<item>	значение	</item>	<item>	поэт	</item>	<item>	уход	</item>	<item>	терпеть	</item>	<item>	предупредить	</item>	<item>	месяц	</item>	<item>	По последнему слову	</item>	<item>	"Темный рыцарь: Возрождение легенды (2012)
-        The Dark Knight Rises"	</item>	</string-array>
-    <string-array name='card85'>	<item>	период	</item>	<item>	степень	</item>	<item>	горло	</item>	<item>	сдать	</item>	<item>	набрать	</item>	<item>	государство	</item>	<item>	Повышать голос	</item>	<item>	"Спасти рядового Райана (1998)
-        Saving Private Ryan"	</item>	</string-array>
-    <string-array name='card86'>	<item>	шаг	</item>	<item>	господин	</item>	<item>	кризис	</item>	<item>	вывести	</item>	<item>	предназначить	</item>	<item>	язык	</item>	<item>	Подливать масла в огонь	</item>	<item>	"Унесенные ветром (1939)
-        Gone with the Wind"	</item>	</string-array>
-    <string-array name='card87'>	<item>	брат	</item>	<item>	надежда	</item>	<item>	указание	</item>	<item>	выпускать	</item>	<item>	уничтожить	</item>	<item>	любовь	</item>	<item>	Показать, где раки зимуют 	</item>	<item>	"Красавица и чудовище (1991)
-        Beauty and the Beast"	</item>	</string-array>
-    <string-array name='card88'>	<item>	искусство	</item>	<item>	предмет	</item>	<item>	плата	</item>	<item>	вступить	</item>	<item>	учесть	</item>	<item>	взгляд	</item>	<item>	Попадать впросак 	</item>	<item>	"Жизнь других (2006)
-        Das Leben der Anderen"	</item>	</string-array>
-    <string-array name='card89'>	<item>	структура	</item>	<item>	вариант	</item>	<item>	яблоко	</item>	<item>	спорить	</item>	<item>	освободить	</item>	<item>	мама	</item>	<item>	Пускать пыль в глаза 	</item>	<item>	"Амадей (1984)
-        Amadeus"	</item>	</string-array>
-    <string-array name='card90'>	<item>	номер	</item>	<item>	министр	</item>	<item>	препарат	</item>	<item>	вытащить	</item>	<item>	воспринимать	</item>	<item>	век	</item>	<item>	Рукой подать 	</item>	<item>	"Ходячий замок (2004)
-        Hauru no ugoku shiro"	</item>	</string-array>
-    <string-array name='card91'>	<item>	пример	</item>	<item>	граница	</item>	<item>	действительность	</item>	<item>	победить	</item>	<item>	прекратить	</item>	<item>	школа	</item>	<item>	Семь пятниц на неделе 	</item>	<item>	"Эффект бабочки (2004)
-        The Butterfly Effect"	</item>	</string-array>
-    <string-array name='card92'>	<item>	исследование	</item>	<item>	дух	</item>	<item>	москвич	</item>	<item>	посадить	</item>	<item>	увеличить	</item>	<item>	цель	</item>	<item>	Скрепя сердце 	</item>	<item>	"Назад в будущее 2 (1989)
-        Back to the Future Part II"	</item>	</string-array>
+    <string-array name='card82'>	<item>	зал	</item>	<item>	литература	</item>	<item>	мощность	</item>	<item>	пустить	</item>	<item>	наступать	</item>	<item>	мать	</item>	<item>	По горячим следам	</item>	<item>	Римские каникулы (1953)	</item>	</string-array>
+    <string-array name='card83'>	<item>	создание	</item>	<item>	бумага	</item>	<item>	обязательство	</item>	<item>	указывать	</item>	<item>	выявить	</item>	<item>	действие	</item>	<item>	По пальцам пересчитать	</item>	<item>	Дневник памяти (2004)	</item>	</string-array>
+    <string-array name='card84'>	<item>	значение	</item>	<item>	поэт	</item>	<item>	уход	</item>	<item>	терпеть	</item>	<item>	предупредить	</item>	<item>	месяц	</item>	<item>	По последнему слову	</item>	<item>	Темный рыцарь: Возрождение легенды (2012)	</item>	</string-array>
+    <string-array name='card85'>	<item>	период	</item>	<item>	степень	</item>	<item>	горло	</item>	<item>	сдать	</item>	<item>	набрать	</item>	<item>	государство	</item>	<item>	Повышать голос	</item>	<item>	Спасти рядового Райана (1998)	</item>	</string-array>
+    <string-array name='card86'>	<item>	шаг	</item>	<item>	господин	</item>	<item>	кризис	</item>	<item>	вывести	</item>	<item>	предназначить	</item>	<item>	язык	</item>	<item>	Подливать масла в огонь	</item>	<item>	Унесенные ветром (1939)	</item>	</string-array>
+    <string-array name='card87'>	<item>	брат	</item>	<item>	надежда	</item>	<item>	указание	</item>	<item>	выпускать	</item>	<item>	уничтожить	</item>	<item>	любовь	</item>	<item>	Показать, где раки зимуют 	</item>	<item>	Красавица и чудовище (1991)	</item>	</string-array>
+    <string-array name='card88'>	<item>	искусство	</item>	<item>	предмет	</item>	<item>	плата	</item>	<item>	вступить	</item>	<item>	учесть	</item>	<item>	взгляд	</item>	<item>	Попадать впросак 	</item>	<item>	Жизнь других (2006)	</item>	</string-array>
+    <string-array name='card89'>	<item>	структура	</item>	<item>	вариант	</item>	<item>	яблоко	</item>	<item>	спорить	</item>	<item>	освободить	</item>	<item>	мама	</item>	<item>	Пускать пыль в глаза 	</item>	<item>	Амадей (1984)	</item>	</string-array>
+    <string-array name='card90'>	<item>	номер	</item>	<item>	министр	</item>	<item>	препарат	</item>	<item>	вытащить	</item>	<item>	воспринимать	</item>	<item>	век	</item>	<item>	Рукой подать 	</item>	<item>	Ходячий замок (2004)	</item>	</string-array>
+    <string-array name='card91'>	<item>	пример	</item>	<item>	граница	</item>	<item>	действительность	</item>	<item>	победить	</item>	<item>	прекратить	</item>	<item>	школа	</item>	<item>	Семь пятниц на неделе 	</item>	<item>	Эффект бабочки (2004)	</item>	</string-array>
+    <string-array name='card92'>	<item>	исследование	</item>	<item>	дух	</item>	<item>	москвич	</item>	<item>	посадить	</item>	<item>	увеличить	</item>	<item>	цель	</item>	<item>	Скрепя сердце 	</item>	<item>	Назад в будущее 2 (1989)	</item>	</string-array>
     <string-array name='card93'>	<item>	гражданин	</item>	<item>	модель	</item>	<item>	остаток	</item>	<item>	обсуждать	</item>	<item>	наблюдаться	</item>	<item>	общество	</item>	<item>	Смотреть сквозь пальцы 	</item>	<item>	Шерлок Холмс и доктор Ватсон: Смертельная схватка (1980)	</item>	</string-array>
-    <string-array name='card94'>	<item>	игра	</item>	<item>	операция	</item>	<item>	изображение	</item>	<item>	заняться	</item>	<item>	объединить	</item>	<item>	деятельность	</item>	<item>	Стереть с лица земли 	</item>	<item>	"Счастливое число Слевина (2005)
-        Lucky Number Slevin"	</item>	</string-array>
-    <string-array name='card95'>	<item>	начальник	</item>	<item>	пара	</item>	<item>	сделка	</item>	<item>	переходить	</item>	<item>	подозревать	</item>	<item>	организация	</item>	<item>	Убивать время	</item>	<item>	"Мальчик в полосатой пижаме (2008)
-        The Boy in the Striped Pyjamas"	</item>	</string-array>
-    <string-array name='card96'>	<item>	рост	</item>	<item>	сон	</item>	<item>	сочинение	</item>	<item>	торопиться	</item>	<item>	справиться	</item>	<item>	президент	</item>	<item>	Ум за разум заходит	</item>	<item>	"…А в душе я танцую (2004)
-        Inside I'm Dancing"	</item>	</string-array>
+    <string-array name='card94'>	<item>	игра	</item>	<item>	операция	</item>	<item>	изображение	</item>	<item>	заняться	</item>	<item>	объединить	</item>	<item>	деятельность	</item>	<item>	Стереть с лица земли 	</item>	<item>	Счастливое число Слевина (2005)	</item>	</string-array>
+    <string-array name='card95'>	<item>	начальник	</item>	<item>	пара	</item>	<item>	сделка	</item>	<item>	переходить	</item>	<item>	подозревать	</item>	<item>	организация	</item>	<item>	Убивать время	</item>	<item>	Мальчик в полосатой пижаме (2008)	</item>	</string-array>
+    <string-array name='card96'>	<item>	рост	</item>	<item>	сон	</item>	<item>	сочинение	</item>	<item>	торопиться	</item>	<item>	справиться	</item>	<item>	президент	</item>	<item>	Ум за разум заходит	</item>	<item>	…А в душе я танцую (2004)	</item>	</string-array>
     <string-array name='card97'>	<item>	тема	</item>	<item>	название	</item>	<item>	покупатель	</item>	<item>	выиграть	</item>	<item>	съесть	</item>	<item>	комната	</item>	<item>	Ума не приложу	</item>	<item>	Они сражались за Родину (1975)	</item>	</string-array>
-    <string-array name='card98'>	<item>	принцип	</item>	<item>	ум	</item>	<item>	танк	</item>	<item>	надеть	</item>	<item>	вестись	</item>	<item>	порядок	</item>	<item>	Уму непостижимо	</item>	<item>	"Хоббит: Нежданное путешествие (2012)
-        The Hobbit: An Unexpected Journey"	</item>	</string-array>
-    <string-array name='card99'>	<item>	метод	</item>	<item>	повод	</item>	<item>	затрата	</item>	<item>	кормить	</item>	<item>	отнести	</item>	<item>	момент	</item>	<item>	Упускать из виду	</item>	<item>	"Могила светлячков (1988)
-        Hotaru no haka"	</item>	</string-array>
-    <string-array name='card100'>	<item>	тип	</item>	<item>	старик	</item>	<item>	строка	</item>	<item>	переживать	</item>	<item>	упомянуть	</item>	<item>	театр	</item>	<item>	Уходить с головой	</item>	<item>	"Общество мертвых поэтов (1989)
-        Dead Poets Society"	</item>	</string-array>
+    <string-array name='card98'>	<item>	принцип	</item>	<item>	ум	</item>	<item>	танк	</item>	<item>	надеть	</item>	<item>	вестись	</item>	<item>	порядок	</item>	<item>	Уму непостижимо	</item>	<item>	Хоббит: Нежданное путешествие (2012)	</item>	</string-array>
+    <string-array name='card99'>	<item>	метод	</item>	<item>	повод	</item>	<item>	затрата	</item>	<item>	кормить	</item>	<item>	отнести	</item>	<item>	момент	</item>	<item>	Упускать из виду	</item>	<item>	Могила светлячков (1988)	</item>	</string-array>
+    <string-array name='card100'>	<item>	тип	</item>	<item>	старик	</item>	<item>	строка	</item>	<item>	переживать	</item>	<item>	упомянуть	</item>	<item>	театр	</item>	<item>	Уходить с головой	</item>	<item>	Общество мертвых поэтов (1989)	</item>	</string-array>
 </resources>

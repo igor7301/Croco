@@ -14,9 +14,9 @@
     <string name="defaultWord">Пусто</string>
     <string name="error">Ошибка</string>
     <string name="noAvailableCards">Нет доступных карт</string>
-    <string name="points">Очки:</string>
+    <string name="points"> - Очки:</string>
 
-    <string name="block1">Объясните словами не используя однокоренных слов</string>
+    <string name="block1">Объясните слова не используя однокоренных слов</string>
     <string name="block2">Объясните слова используя только мимику, жесты, движения</string>
     <string name="block3">Изобразите слово при помощи карандаша и бумаги</string>
     <string name="block4">Объясните словами фразеологизм</string>

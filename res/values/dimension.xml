@@ -3,9 +3,8 @@
     <dimen name="wordSize">20dp</dimen>
     <dimen name="wordPaddingBottom">8dp</dimen>
     <dimen name="wordPaddingLeft">10dp</dimen>
-    <dimen name="textSizeOnButtons">10dp</dimen>
     <dimen name="widthOfButtonWithTextOnActiveCard">150dp</dimen>
-    <dimen name="textSizeOfTaskOnActiveCard">8dp</dimen>
-    <dimen name="textSizeOnBlockButtonsOnActiveCard">10dp</dimen>
+    <dimen name="textSizeOfTaskOnActiveCard">10dp</dimen>
+    <dimen name="textSizeOnBlockButtonsOnActiveCard">12dp</dimen>
 
 </resources>

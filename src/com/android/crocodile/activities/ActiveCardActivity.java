@@ -16,6 +16,12 @@ import java.util.ArrayList;
  */
 public class ActiveCardActivity extends Activity implements View.OnClickListener {
 
+    private final  static int POINTS_BLOCK1 = 2;
+    private final  static int POINTS_BLOCK2 = 3;
+    private final  static int POINTS_BLOCK3 = 2;
+    private final  static int POINTS_BLOCK4 = 5;
+    private final  static int POINTS_BLOCK5 = 7;
+
     private ArrayList<Card> playersCards;
     private Integer playerId;
     private String playerName;
@@ -121,7 +127,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
                     if ( playersCards.get(activeCardId).getPointForBlock1() == 0 ) {
                         points.setImageResource(R.drawable.points_block1_active);
-                        playersCards.get(activeCardId).setPointForBlock1(3);
+                        playersCards.get(activeCardId).setPointForBlock1(POINTS_BLOCK1);
 
                     } else {
                         points.setImageResource(R.drawable.points_block1_inactive);
@@ -134,7 +140,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
                     if ( playersCards.get(activeCardId).getPointForBlock2() == 0 ) {
                         points.setImageResource(R.drawable.points_block2_active);
-                        playersCards.get(activeCardId).setPointForBlock2(2);
+                        playersCards.get(activeCardId).setPointForBlock2(POINTS_BLOCK2);
 
                     } else {
                         points.setImageResource(R.drawable.points_block2_inactive);
@@ -146,7 +152,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
                     points = imgPointForBlock3;
                     if ( playersCards.get(activeCardId).getPointForBlock3() == 0 ) {
                         points.setImageResource(R.drawable.points_block3_active);
-                        playersCards.get(activeCardId).setPointForBlock3(2);
+                        playersCards.get(activeCardId).setPointForBlock3(POINTS_BLOCK3);
 
                     } else {
                         points.setImageResource(R.drawable.points_block3_inactive);
@@ -159,7 +165,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
                     if (playersCards.get(activeCardId).getPointForBlock4() == 0 ) {
                         points.setImageResource(R.drawable.points_block4_active);
-                        playersCards.get(activeCardId).setPointForBlock4(5);
+                        playersCards.get(activeCardId).setPointForBlock4(POINTS_BLOCK4);
 
                     } else {
                         points.setImageResource(R.drawable.points_block4_inactive);
@@ -172,7 +178,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
                     if ( playersCards.get(activeCardId).getPointForBlock5() == 0 ) {
                         points.setImageResource(R.drawable.points_block5_active);
-                        playersCards.get(activeCardId).setPointForBlock5(7);
+                        playersCards.get(activeCardId).setPointForBlock5(POINTS_BLOCK5);
 
                     } else {
                         points.setImageResource(R.drawable.points_block5_inactive);
@@ -202,13 +208,16 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
         btnBlock1.setText(playersCards.get(activeCardId).getWord1() + "\n" +
                 playersCards.get(activeCardId).getWord2() + "\n" +
                 playersCards.get(activeCardId).getWord3());
-        
         btnBlock2.setText(playersCards.get(activeCardId).getWord4() + "\n" +
                 playersCards.get(activeCardId).getWord5());
-
         btnBlock3.setText(playersCards.get(activeCardId).getWord6());
         btnBlock4.setText(playersCards.get(activeCardId).getWord7());
         btnBlock5.setText(playersCards.get(activeCardId).getWord8());
+        btnBlock1.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
+        btnBlock2.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
+        btnBlock3.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
+        btnBlock4.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
+        btnBlock5.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
 
 
         txtPlayerName.setText(playerName);

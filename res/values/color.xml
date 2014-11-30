@@ -4,5 +4,6 @@
     <color name="inactivePoints">#ffaaaaaa</color>
     <color name="activePoints">#ffffffff</color>
     <color name="activePointsStroke">#ff000000</color>
+    <color name="black">#00000000</color>
 
 </resources>

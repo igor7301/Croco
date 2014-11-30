@@ -14,7 +14,7 @@
             android:text="@string/numberOfPlayers"
             android:id="@+id/tV_numberOfPlayers" android:layout_gravity="center_horizontal"/>
     <EditText
-            android:layout_width="65dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"

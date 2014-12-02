@@ -11,6 +11,7 @@ import java.util.List;
  * Created by v-ikomarov on 11/18/2014.
  */
 public class Card implements Parcelable {
+    private static final long TIMER = 600; // 10 min
     private String word1;
     private String word2;
     private String word3;
@@ -24,13 +25,13 @@ public class Card implements Parcelable {
     private int pointForBlock3;
     private int pointForBlock4;
     private int pointForBlock5;
+    private long timer;
 
     private int id;
 
     public Card() {
 
     }
-
     public Card(String word1, String word2, String word3, String word4, String word5, String word6, String word7, String word8, int pointForBlock1, int pointForBlock2, int pointForBlock3, int pointForBlock4, int pointForBlock5) {
         this.word1 = word1;
         this.word2 = word2;
@@ -45,6 +46,26 @@ public class Card implements Parcelable {
         this.pointForBlock3 = pointForBlock3;
         this.pointForBlock4 = pointForBlock4;
         this.pointForBlock5 = pointForBlock5;
+        this.timer = TIMER;
+
+    }
+
+    public Card(String word1, String word2, String word3, String word4, String word5, String word6, String word7, String word8, int pointForBlock1, int pointForBlock2, int pointForBlock3, int pointForBlock4, int pointForBlock5, long timer) {
+        this.word1 = word1;
+        this.word2 = word2;
+        this.word3 = word3;
+        this.word4 = word4;
+        this.word5 = word5;
+        this.word6 = word6;
+        this.word7 = word7;
+        this.word8 = word8;
+        this.pointForBlock1 = pointForBlock1;
+        this.pointForBlock2 = pointForBlock2;
+        this.pointForBlock3 = pointForBlock3;
+        this.pointForBlock4 = pointForBlock4;
+        this.pointForBlock5 = pointForBlock5;
+        this.timer = timer;
+
     }
 
 
@@ -160,6 +181,14 @@ public class Card implements Parcelable {
         this.id = id;
     }
 
+    public long getTimer() {
+        return timer;
+    }
+
+    public void setTimer(long timer) {
+        this.timer = timer;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -168,7 +197,8 @@ public class Card implements Parcelable {
     @Override
     public void writeToParcel(Parcel parcel, int flag) {
        parcel.writeStringArray(new String[] {getWord1(), getWord2(), getWord3(), getWord4(), getWord5(), getWord6(), getWord7(), getWord8()});
-        parcel.writeIntArray(new int[] {getPointForBlock1(), getPointForBlock2(), getPointForBlock3(), getPointForBlock4(), getPointForBlock5()});
+       parcel.writeIntArray(new int[] {getPointForBlock1(), getPointForBlock2(), getPointForBlock3(), getPointForBlock4(), getPointForBlock5()});
+       parcel.writeLong(getTimer());
 
 
     }
@@ -204,6 +234,8 @@ public class Card implements Parcelable {
         setPointForBlock3(dataint[2]);
         setPointForBlock4(dataint[3]);
         setPointForBlock5(dataint[4]);
+
+        setTimer(parcel.readLong());
 
     }
 }

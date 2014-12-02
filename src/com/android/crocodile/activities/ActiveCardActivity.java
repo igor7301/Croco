@@ -3,18 +3,23 @@ package com.android.crocodile.activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.View;
 import android.widget.*;
 import com.android.crocodile.Card;
 import com.android.crocodile.R;
 import com.android.crocodile.Utils;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Created by v-ikomarov on 11/19/2014.
  */
 public class ActiveCardActivity extends Activity implements View.OnClickListener {
+    private SimpleDateFormat formatter = new SimpleDateFormat("mm:ss");
 
     private final  static int POINTS_BLOCK1 = 2;
     private final  static int POINTS_BLOCK2 = 3;
@@ -29,6 +34,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
     private ImageButton btnGetNextCard;
     private ImageButton btnGetPreviousCard;
     private TextView txtPlayerName;
+    private TextView txtTimer;
     private TextView txtCardID;
     private Button btnBlock1;
     private Button btnBlock2;
@@ -40,6 +46,8 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
     private ImageView imgPointForBlock3;
     private ImageView imgPointForBlock4;
     private ImageView imgPointForBlock5;
+    private CountDownTimer timer;
+    private Date myDate = new Date();
 
 
 
@@ -54,6 +62,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
         btnGetPreviousCard = (ImageButton) findViewById(R.id.btnGetPreviousCard);
         btnGetPreviousCard.setOnClickListener(this);
         txtPlayerName = (TextView) findViewById(R.id.nameOfPlayer);
+        txtTimer = (TextView) findViewById(R.id.tvTimerOnCard);
         txtCardID = (TextView) findViewById(R.id.cardID);
         btnBlock1 = (Button) findViewById(R.id.btnBlock1);
         btnBlock2 = (Button) findViewById(R.id.btnBlock2);
@@ -225,6 +234,8 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
 
 
+        showTimer(playersCards.get(activeCardId).getTimer());
+
 
         if (playersCards.get(activeCardId).getPointForBlock1() > 0) {
            imgPointForBlock1.setImageResource(R.drawable.points_block1_active);
@@ -259,4 +270,36 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
 
     }
+
+    public void showTimer(long timeInSecond) {
+        //Create timer
+        if(timer != null) {
+            timer.cancel();
+            timer = null;
+            System.gc();
+        }
+
+        timer = new CountDownTimer(timeInSecond * 1000, 1000) {
+            @Override
+            public void onTick(long l) {
+                //Log.d("MY LOG", String.valueOf(l / 1000));
+
+                playersCards.get(activeCardId).setTimer(l/1000);
+
+                myDate.setTime(l);
+                //Log.d("MY LOG", "card: " + activeCardId + ". Timer: " + formatter.format(myDate));
+                txtTimer.setText(formatter.format(myDate));
+
+
+            }
+
+            @Override
+            public void onFinish() {
+               // Log.d("MY LOG", "FINISH");
+                playersCards.get(activeCardId).setTimer(0);
+
+            }
+        }.start();
+    }
+
 }

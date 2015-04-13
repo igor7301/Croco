@@ -25,13 +25,15 @@ public class Card implements Parcelable {
     private int pointForBlock3;
     private int pointForBlock4;
     private int pointForBlock5;
-    private long timer;
+    private long timer = TIMER;
 
     private int id;
 
     public Card() {
 
     }
+
+
     public Card(String word1, String word2, String word3, String word4, String word5, String word6, String word7, String word8, int pointForBlock1, int pointForBlock2, int pointForBlock3, int pointForBlock4, int pointForBlock5) {
         this.word1 = word1;
         this.word2 = word2;
@@ -46,24 +48,11 @@ public class Card implements Parcelable {
         this.pointForBlock3 = pointForBlock3;
         this.pointForBlock4 = pointForBlock4;
         this.pointForBlock5 = pointForBlock5;
-        this.timer = TIMER;
 
     }
 
     public Card(String word1, String word2, String word3, String word4, String word5, String word6, String word7, String word8, int pointForBlock1, int pointForBlock2, int pointForBlock3, int pointForBlock4, int pointForBlock5, long timer) {
-        this.word1 = word1;
-        this.word2 = word2;
-        this.word3 = word3;
-        this.word4 = word4;
-        this.word5 = word5;
-        this.word6 = word6;
-        this.word7 = word7;
-        this.word8 = word8;
-        this.pointForBlock1 = pointForBlock1;
-        this.pointForBlock2 = pointForBlock2;
-        this.pointForBlock3 = pointForBlock3;
-        this.pointForBlock4 = pointForBlock4;
-        this.pointForBlock5 = pointForBlock5;
+        this(word1, word2, word3, word4, word5, word6, word7, word8, pointForBlock1, pointForBlock2, pointForBlock3, pointForBlock4, pointForBlock5);
         this.timer = timer;
 
     }

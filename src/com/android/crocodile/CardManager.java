@@ -73,62 +73,62 @@ public class CardManager {
         return cards;
     }
 
-    public void saveCardsIntoDB(List<Card> cards ) {
-
-
-        dbHelper = new DBHelper(context);
-
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-        db.delete(DBHelper.CARD_TABLE, null,null);
-
-        ContentValues cv;
-        Cursor c = db.rawQuery("SELECT * FROM " + DBHelper.CARD_TABLE, null);
-
-
-        for (Card card: cards) {
-            cv = setCV(card);
-
-            String currentCard  = card.getWord1().toLowerCase().trim() + card.getWord2().toLowerCase().trim() +card.getWord3().toLowerCase().trim() + card.getWord4().toLowerCase().trim() + card.getWord5().toLowerCase().trim() +                    card.getWord6().toLowerCase().trim() +                    card.getWord7().toLowerCase().trim() +                    card.getWord8().toLowerCase().trim();
-            if (c.moveToFirst()) {
-                do {
-                    String dbCard = c.getString(c.getColumnIndex(DBHelper.WORD1)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD2)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD3)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD4)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD5)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD6)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD7)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD8)).toLowerCase().trim();
-                    if (currentCard.equals(dbCard)) {
-                        break;
-                    }
-                }
-                while (c.moveToNext());
-
-                if(c.isAfterLast()) {
-
-                    db.insert(DBHelper.CARD_TABLE, null, cv);
-                }
-
-            }
-            else {
-                db.insert(DBHelper.CARD_TABLE, null, cv);
-            }
-
-        }
-
-
-        c = db.rawQuery("SELECT * FROM " + DBHelper.CARD_TABLE, null);
-        logCursor(c);
-
-    }
-
-    private ContentValues setCV(Card card) {
-        ContentValues cv  = new ContentValues();
-        cv.put(DBHelper.WORD1, card.getWord1());
-        cv.put(DBHelper.WORD2, card.getWord2());
-        cv.put(DBHelper.WORD3, card.getWord3());
-        cv.put(DBHelper.WORD4, card.getWord4());
-        cv.put(DBHelper.WORD5, card.getWord5());
-        cv.put(DBHelper.WORD6, card.getWord6());
-        cv.put(DBHelper.WORD7, card.getWord7());
-        cv.put(DBHelper.WORD8, card.getWord8());
-
-        return cv;
-    }
+//    public void saveCardsIntoDB(List<Card> cards ) {
+//
+//
+//        dbHelper = new DBHelper(context);
+//
+//        SQLiteDatabase db = dbHelper.getWritableDatabase();
+//        db.delete(DBHelper.CARD_TABLE, null,null);
+//
+//        ContentValues cv;
+//        Cursor c = db.rawQuery("SELECT * FROM " + DBHelper.CARD_TABLE, null);
+//
+//
+//        for (Card card: cards) {
+//            cv = setCV(card);
+//
+//            String currentCard  = card.getWord1().toLowerCase().trim() + card.getWord2().toLowerCase().trim() +card.getWord3().toLowerCase().trim() + card.getWord4().toLowerCase().trim() + card.getWord5().toLowerCase().trim() +                    card.getWord6().toLowerCase().trim() +                    card.getWord7().toLowerCase().trim() +                    card.getWord8().toLowerCase().trim();
+//            if (c.moveToFirst()) {
+//                do {
+//                    String dbCard = c.getString(c.getColumnIndex(DBHelper.WORD1)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD2)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD3)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD4)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD5)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD6)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD7)).toLowerCase().trim() +                    c.getString(c.getColumnIndex(DBHelper.WORD8)).toLowerCase().trim();
+//                    if (currentCard.equals(dbCard)) {
+//                        break;
+//                    }
+//                }
+//                while (c.moveToNext());
+//
+//                if(c.isAfterLast()) {
+//
+//                    db.insert(DBHelper.CARD_TABLE, null, cv);
+//                }
+//
+//            }
+//            else {
+//                db.insert(DBHelper.CARD_TABLE, null, cv);
+//            }
+//
+//        }
+//
+//
+//        c = db.rawQuery("SELECT * FROM " + DBHelper.CARD_TABLE, null);
+//        logCursor(c);
+//
+//    }
+//
+//    private ContentValues setCV(Card card) {
+//        ContentValues cv  = new ContentValues();
+//        cv.put(DBHelper.WORD1, card.getWord1());
+//        cv.put(DBHelper.WORD2, card.getWord2());
+//        cv.put(DBHelper.WORD3, card.getWord3());
+//        cv.put(DBHelper.WORD4, card.getWord4());
+//        cv.put(DBHelper.WORD5, card.getWord5());
+//        cv.put(DBHelper.WORD6, card.getWord6());
+//        cv.put(DBHelper.WORD7, card.getWord7());
+//        cv.put(DBHelper.WORD8, card.getWord8());
+//
+//        return cv;
+//    }
 
     private void logCursor(Cursor c) {
         if (c.moveToFirst()) {
@@ -173,46 +173,46 @@ public class CardManager {
         TypedArray ta = res.obtainTypedArray(R.array.cards);
         String[] ar = res.getStringArray(ta.getResourceId(i, 0));
 
-        return  new Card(ar[0],ar[1], ar[2], ar[3],ar[4],ar[5],ar[6],ar[7], 0, 0, 0, 0, 0);
+        return  new Card(Arrays.asList(ar), 0, 0, 0, 0, 0);
     }
 
-    public List<Card> loadCardsFromDB() {
-        List<Card> loadedCards = new ArrayList<Card>();
-        dbHelper = new DBHelper(context);
-        db = dbHelper.getReadableDatabase();
-        Cursor c;
+//    public List<Card> loadCardsFromDB() {
+//        List<Card> loadedCards = new ArrayList<Card>();
+//        dbHelper = new DBHelper(context);
+//        db = dbHelper.getReadableDatabase();
+//        Cursor c;
+//
+//        c = db.rawQuery("SELECT * FROM " + DBHelper.CARD_TABLE, null);
+//        int i = 0;
+//        if(c.moveToFirst()){
+//            do {
+//
+//                loadedCards.add(i, getCardFromDB(c));
+//            } while (c.moveToNext());
+//            Collections.shuffle(loadedCards);
+//            return loadedCards;
+//        }
+//        else {
+//            Toast.makeText(context, DB_EMPTY_STR, Toast.LENGTH_SHORT).show();
+//            return null;
+//        }
+//    }
 
-        c = db.rawQuery("SELECT * FROM " + DBHelper.CARD_TABLE, null);
-        int i = 0;
-        if(c.moveToFirst()){
-            do {
-
-                loadedCards.add(i, getCardFromDB(c));
-            } while (c.moveToNext());
-            Collections.shuffle(loadedCards);
-            return loadedCards;
-        }
-        else {
-            Toast.makeText(context, DB_EMPTY_STR, Toast.LENGTH_SHORT).show();
-            return null;
-        }
-    }
-
-    private Card getCardFromDB(Cursor c) {
-        Card card = new Card();
-        card.setId(Integer.parseInt(c.getString(c.getColumnIndex(DBHelper.ID))));
-        card.setWord1(c.getString(c.getColumnIndex(DBHelper.WORD1)));
-        card.setWord2(c.getString(c.getColumnIndex(DBHelper.WORD2)));
-        card.setWord3(c.getString(c.getColumnIndex(DBHelper.WORD3)));
-        card.setWord4(c.getString(c.getColumnIndex(DBHelper.WORD4)));
-        card.setWord5(c.getString(c.getColumnIndex(DBHelper.WORD5)));
-        card.setWord6(c.getString(c.getColumnIndex(DBHelper.WORD6)));
-        card.setWord7(c.getString(c.getColumnIndex(DBHelper.WORD7)));
-        card.setWord8(c.getString(c.getColumnIndex(DBHelper.WORD8)));
-
-
-        return card;
-    }
+//    private Card getCardFromDB(Cursor c) {
+//        Card card = new Card();
+//        card.setId(Integer.parseInt(c.getString(c.getColumnIndex(DBHelper.ID))));
+//        card.setWord1(c.getString(c.getColumnIndex(DBHelper.WORD1)));
+//        card.setWord2(c.getString(c.getColumnIndex(DBHelper.WORD2)));
+//        card.setWord3(c.getString(c.getColumnIndex(DBHelper.WORD3)));
+//        card.setWord4(c.getString(c.getColumnIndex(DBHelper.WORD4)));
+//        card.setWord5(c.getString(c.getColumnIndex(DBHelper.WORD5)));
+//        card.setWord6(c.getString(c.getColumnIndex(DBHelper.WORD6)));
+//        card.setWord7(c.getString(c.getColumnIndex(DBHelper.WORD7)));
+//        card.setWord8(c.getString(c.getColumnIndex(DBHelper.WORD8)));
+//
+//
+//        return card;
+//    }
 
 
     public List<Integer> setActiveCardsForStart(Integer numberOfPlayers) {

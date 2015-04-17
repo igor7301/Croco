@@ -124,17 +124,6 @@ public class Card implements Parcelable {
         setPointsForBlocks(points);
 
 
-
-
-//
-//        int[] dataint = new int[5];
-//        parcel.readIntArray(dataint);
-//        setPointForBlock1(dataint[0]);
-//        setPointForBlock2(dataint[1]);
-//        setPointForBlock3(dataint[2]);
-//        setPointForBlock4(dataint[3]);
-//        setPointForBlock5(dataint[4]);
-
         setTimer(parcel.readLong());
 
     }

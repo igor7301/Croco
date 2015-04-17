@@ -20,11 +20,11 @@ import java.util.Date;
 public class ActiveCardActivity extends Activity implements View.OnClickListener {
     private SimpleDateFormat formatter = new SimpleDateFormat("mm:ss");
 
-    private final  static int POINTS_BLOCK1 = 2;
-    private final  static int POINTS_BLOCK2 = 3;
-    private final  static int POINTS_BLOCK3 = 2;
-    private final  static int POINTS_BLOCK4 = 5;
-    private final  static int POINTS_BLOCK5 = 7;
+    private final static int POINTS_BLOCK1 = 2;
+    private final static int POINTS_BLOCK2 = 3;
+    private final static int POINTS_BLOCK3 = 2;
+    private final static int POINTS_BLOCK4 = 5;
+    private final static int POINTS_BLOCK5 = 7;
     private final static int[] POINTS_FOR_BLOCKS = new int[]
             {POINTS_BLOCK1, POINTS_BLOCK2, POINTS_BLOCK3, POINTS_BLOCK4, POINTS_BLOCK5};
 
@@ -68,11 +68,11 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
         btnBlock3 = (Button) findViewById(R.id.btnBlock3);
         btnBlock4 = (Button) findViewById(R.id.btnBlock4);
         btnBlock5 = (Button) findViewById(R.id.btnBlock5);
-        imgPointForBlock1  = (ImageView) findViewById(R.id.imgPointsBlock1);
-        imgPointForBlock2  = (ImageView) findViewById(R.id.imgPointsBlock2);
-        imgPointForBlock3  = (ImageView) findViewById(R.id.imgPointsBlock3);
-        imgPointForBlock4  = (ImageView) findViewById(R.id.imgPointsBlock4);
-        imgPointForBlock5  = (ImageView) findViewById(R.id.imgPointsBlock5);
+        imgPointForBlock1 = (ImageView) findViewById(R.id.imgPointsBlock1);
+        imgPointForBlock2 = (ImageView) findViewById(R.id.imgPointsBlock2);
+        imgPointForBlock3 = (ImageView) findViewById(R.id.imgPointsBlock3);
+        imgPointForBlock4 = (ImageView) findViewById(R.id.imgPointsBlock4);
+        imgPointForBlock5 = (ImageView) findViewById(R.id.imgPointsBlock5);
         btnBlock1.setOnClickListener(this);
         btnBlock2.setOnClickListener(this);
         btnBlock3.setOnClickListener(this);
@@ -81,7 +81,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
 
         Intent intent = getIntent();
-        playersCards =  intent.getParcelableArrayListExtra(Utils.PLAYERS_CARDS);
+        playersCards = intent.getParcelableArrayListExtra(Utils.PLAYERS_CARDS);
         activeCardId = Integer.parseInt(intent.getStringExtra(Utils.ACTIVE_CARD_ID));
 
 
@@ -89,15 +89,14 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
         playerId = Integer.parseInt(intent.getStringExtra(Utils.PLAYER_ID));
 
-        if(!playersCards.isEmpty()) {
+        if (!playersCards.isEmpty()) {
             updateCardForPlayer();
-        }
-        else {
+        } else {
             Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
         }
 
     }
-    
+
     private void setImageForActivePoints(int numberOfBlock) {
         switch (numberOfBlock) {
             case 1:
@@ -117,7 +116,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
                 break;
             default:
         }
-        
+
     }
 
     private void setImageForInactivePoints(int numberOfBlock) {
@@ -141,83 +140,81 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
         }
 
     }
-    
+
     private void updatePointsForBlockWithWords(int numberOfBlock) {
-        if ( playersCards.get(activeCardId).getPointsForBlock(numberOfBlock) == 0 ) {
+        if (playersCards.get(activeCardId).getPointsForBlock(numberOfBlock) == 0) {
             playersCards.get(activeCardId).setPointsForBlock(numberOfBlock, POINTS_FOR_BLOCKS[numberOfBlock - 1]);
 
-        }
-        else {
+        } else {
             playersCards.get(activeCardId).setPointsForBlock(numberOfBlock, 0);
-        }  
+        }
     }
 
     private void displayPointsForBlockWithWord(int numberOfBlock) {
         if (playersCards.get(activeCardId).getPointsForBlock(numberOfBlock) > 0) {
             setImageForActivePoints(numberOfBlock);
-        }
-        else {
+        } else {
             setImageForInactivePoints(numberOfBlock);
+        }
+    }
+
+    private void clickOnBlockWithWords(int blockNumber) {
+        if (playersCards.get(activeCardId).getTimer() > 0) {
+            updatePointsForBlockWithWords(blockNumber);
+            displayPointsForBlockWithWord(blockNumber);
         }
     }
 
     @Override
     public void onClick(View view) {
-           switch (view.getId()) {
-                case R.id.btnGetNextCard:
-                    if(!playersCards.isEmpty()) {
-                        if (activeCardId == playersCards.size() - 1) {
-                            Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
-                        } else {
-                            activeCardId = activeCardId + 1;
-                            updateCardForPlayer();
-
-                        }
-                    }
-                    else {
+        switch (view.getId()) {
+            case R.id.btnGetNextCard:
+                if (!playersCards.isEmpty()) {
+                    if (activeCardId == playersCards.size() - 1) {
                         Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
-                    }
-                    break;
-                case R.id.btnGetPreviousCard:
-                    if(!playersCards.isEmpty()) {
-                        if (activeCardId == 0) {
+                    } else {
+                        activeCardId = activeCardId + 1;
+                        updateCardForPlayer();
 
-                            Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
-                        } else {
-                            activeCardId = activeCardId - 1;
-                            updateCardForPlayer();
-                        }
                     }
-                    else {
+                } else {
+                    Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.btnGetPreviousCard:
+                if (!playersCards.isEmpty()) {
+                    if (activeCardId == 0) {
+
                         Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
+                    } else {
+                        activeCardId = activeCardId - 1;
+                        updateCardForPlayer();
                     }
-                    break;
-                case R.id.btnBlock1:
-                    updatePointsForBlockWithWords(1);
-                    displayPointsForBlockWithWord(1);
-                    break;
+                } else {
+                    Toast.makeText(this, getString(R.string.noAvailableCards), Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.btnBlock1:
+                clickOnBlockWithWords(1);
+                break;
 
-                case R.id.btnBlock2:
-                   updatePointsForBlockWithWords(2);
-                    displayPointsForBlockWithWord(2);
-                    break;
+            case R.id.btnBlock2:
+                clickOnBlockWithWords(2);
+                break;
 
-                case R.id.btnBlock3:
-                    updatePointsForBlockWithWords(3);
-                    displayPointsForBlockWithWord(3);
-                    break;
+            case R.id.btnBlock3:
+                clickOnBlockWithWords(3);
+                break;
 
-                case R.id.btnBlock4:
-                    updatePointsForBlockWithWords(4);
-                    displayPointsForBlockWithWord(4);
-                    break;
+            case R.id.btnBlock4:
+                clickOnBlockWithWords(4);
+                break;
 
-                case R.id.btnBlock5:
-                   updatePointsForBlockWithWords(5);
-                    displayPointsForBlockWithWord(5);
-                    break;
-            }
+            case R.id.btnBlock5:
+                clickOnBlockWithWords(5);
+                break;
         }
+    }
 
     @Override
     public void onBackPressed() {
@@ -230,7 +227,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
     }
 
     private void updateCardForPlayer() {
-        Integer  cardIDForDisplay = activeCardId + 1;
+        Integer cardIDForDisplay = activeCardId + 1;
 
         btnBlock1.setText(playersCards.get(activeCardId).getWordsList().get(0) + "\n" +
                 playersCards.get(activeCardId).getWordsList().get(1) + "\n" +
@@ -251,22 +248,21 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
         txtCardID.setText(cardIDForDisplay.toString());
 
 
-
         showTimer(playersCards.get(activeCardId).getTimer());
 
 
-       displayPointsForBlockWithWord(1);
-       displayPointsForBlockWithWord(2);
-       displayPointsForBlockWithWord(3);
-       displayPointsForBlockWithWord(4);
-       displayPointsForBlockWithWord(5);
+        displayPointsForBlockWithWord(1);
+        displayPointsForBlockWithWord(2);
+        displayPointsForBlockWithWord(3);
+        displayPointsForBlockWithWord(4);
+        displayPointsForBlockWithWord(5);
 
 
     }
 
     public void showTimer(long timeInSecond) {
         //Create timer
-        if(timer != null) {
+        if (timer != null) {
             timer.cancel();
             timer = null;
             System.gc();
@@ -277,7 +273,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
             public void onTick(long l) {
                 //Log.d("MY LOG", String.valueOf(l / 1000));
 
-                playersCards.get(activeCardId).setTimer(l/1000);
+                playersCards.get(activeCardId).setTimer(l / 1000);
 
                 myDate.setTime(l);
                 //Log.d("MY LOG", "card: " + activeCardId + ". Timer: " + formatter.format(myDate));
@@ -288,7 +284,7 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
 
             @Override
             public void onFinish() {
-               // Log.d("MY LOG", "FINISH");
+                // Log.d("MY LOG", "FINISH");
                 playersCards.get(activeCardId).setTimer(0);
 
             }

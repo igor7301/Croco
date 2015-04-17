@@ -285,6 +285,9 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
             @Override
             public void onFinish() {
                 // Log.d("MY LOG", "FINISH");
+
+                myDate.setTime(0);
+                txtTimer.setText(formatter.format(myDate));
                 playersCards.get(activeCardId).setTimer(0);
 
             }

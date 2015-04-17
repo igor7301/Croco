@@ -114,11 +114,11 @@ public class ChoosePlayerActivity extends Activity implements View.OnClickListen
         int points = 0;
         for(int i = 0; i < playersCard.size(); i++){
            points = points +
-                   playersCard.get(i).getPointForBlock1() +
-                   playersCard.get(i).getPointForBlock2() +
-                   playersCard.get(i).getPointForBlock3() +
-                   playersCard.get(i).getPointForBlock4() +
-                   playersCard.get(i).getPointForBlock5();
+                   playersCard.get(i).getPointsForBlock(1) +
+                   playersCard.get(i).getPointsForBlock(2) +
+                   playersCard.get(i).getPointsForBlock(3) +
+                   playersCard.get(i).getPointsForBlock(4) +
+                   playersCard.get(i).getPointsForBlock(5);
         }
         return points;
     }

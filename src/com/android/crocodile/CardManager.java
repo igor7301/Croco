@@ -173,7 +173,7 @@ public class CardManager {
         TypedArray ta = res.obtainTypedArray(R.array.cards);
         String[] ar = res.getStringArray(ta.getResourceId(i, 0));
 
-        return  new Card(Arrays.asList(ar), 0, 0, 0, 0, 0);
+        return  new Card(Arrays.asList(ar), new int[] {0, 0, 0, 0, 0});
     }
 
 //    public List<Card> loadCardsFromDB() {

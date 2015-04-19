@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.View;
 import android.widget.*;
 import com.android.crocodile.Card;
@@ -268,15 +269,16 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
             System.gc();
         }
 
-        timer = new CountDownTimer(timeInSecond * 1000, 1000) {
+        timer = new CountDownTimer((timeInSecond) * 1000, 1000) {
             @Override
             public void onTick(long l) {
-                //Log.d("MY LOG", String.valueOf(l / 1000));
+//                Log.d("MY LOG", String.valueOf(l / 1000));
 
+                l = l - 1000; //если l < 1 то он не зайдет в onTick поэтому уменьшаем таймер на 1 секунду
                 playersCards.get(activeCardId).setTimer(l / 1000);
 
                 myDate.setTime(l);
-                //Log.d("MY LOG", "card: " + activeCardId + ". Timer: " + formatter.format(myDate));
+                Log.d("MY LOG", "card: " + activeCardId + ". Timer: " + formatter.format(myDate));
                 txtTimer.setText(formatter.format(myDate));
 
 

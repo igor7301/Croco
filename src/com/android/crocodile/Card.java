@@ -9,7 +9,7 @@ import java.util.*;
  * Created by v-ikomarov on 11/18/2014.
  */
 public class Card implements Parcelable {
-    private static final long TIMER = 600; // 10 min
+    private static final long TIMER = 602; // 10 min
 
     private long timer = TIMER;
 

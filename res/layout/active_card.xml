@@ -6,7 +6,7 @@
               android:layout_height="match_parent"
               android:background="@drawable/background"
               android:paddingLeft="@dimen/wordPaddingLeft"
-              android:layout_gravity="center"
+
         >
 
     <LinearLayout
@@ -46,10 +46,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="left"
             android:text="@string/defaultWord"
 
-            >
+            android:layout_gravity="left" android:layout_weight="0">
 
             <Button
                     android:layout_width="wrap_content"
@@ -64,16 +63,12 @@
                     />
 
 
-
         <ImageView android:layout_width="wrap_content" android:layout_height="match_parent"
                 android:src="@drawable/points_block1_inactive" android:id="@+id/imgPointsBlock1" android:layout_weight="0"/>
-
-        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_gravity="center">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:text="@string/block1" android:textSize="@dimen/textSizeOfTaskOnActiveCard"
-                      android:textColor="@android:color/black" android:layout_weight="1"
-                     />
-        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/block1" android:textSize="@dimen/textSizeOfTaskOnActiveCard"
+                  android:textColor="@android:color/black" android:layout_weight="1"
+                 />
 
     </LinearLayout>
 
@@ -163,7 +158,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_gravity="right|center">
+            android:layout_gravity="right">
 
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                   android:text="@string/block4" android:textSize="@dimen/textSizeOfTaskOnActiveCard"
@@ -183,8 +178,7 @@
                 android:textAlignment="gravity"
                 android:gravity="right|center"
                 android:src="@drawable/worlds_frame"
-                android:layout_weight="0"
-                />
+                android:layout_weight="1"/>
 
     </LinearLayout>
 
@@ -224,7 +218,7 @@
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                   android:text="@string/block5" android:textSize="@dimen/textSizeOfTaskOnActiveCard"
                   android:textColor="@android:color/black"
-                  android:layout_gravity="center" android:layout_weight="0"/>
+                  android:layout_gravity="center" android:layout_weight="1"/>
 
     </LinearLayout>
 

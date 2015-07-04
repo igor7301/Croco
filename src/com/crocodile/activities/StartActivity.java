@@ -1,20 +1,11 @@
-package com.android.crocodile.activities;
+package com.crocodile.activities;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import com.android.crocodile.R;
-
-import java.io.*;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
 
 /**
  * Created by v-ikomarov on 11/24/2014.

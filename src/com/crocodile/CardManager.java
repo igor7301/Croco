@@ -1,14 +1,12 @@
-package com.android.crocodile;
+package com.crocodile;
 
-import android.app.Activity;
-import android.content.ContentValues;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
-import android.widget.Toast;
+import com.android.crocodile.R;
 
 import java.util.*;
 

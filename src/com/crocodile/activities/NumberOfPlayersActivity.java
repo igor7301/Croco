@@ -1,20 +1,14 @@
-package com.android.crocodile.activities;
+package com.crocodile.activities;
 
 import android.app.Activity;
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import com.android.crocodile.Card;
-import com.android.crocodile.DBHelper;
 import com.android.crocodile.R;
-import com.android.crocodile.Utils;
+import com.crocodile.Utils;
 
 public class NumberOfPlayersActivity extends Activity implements View.OnClickListener {
     private final static  String MY_LOG = "MY_LOG";

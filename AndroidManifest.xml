@@ -7,16 +7,16 @@
               android:targetSdkVersion="19"
                 android:maxSdkVersion="19"/>
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
-        <activity android:name=".activities.StartActivity"
+        <activity android:name="com.crocodile.activities.StartActivity"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activities.NumberOfPlayersActivity"></activity>
-        <activity android:name=".activities.NameOfPlayersActivity"></activity>
-        <activity android:name=".activities.ChoosePlayerActivity"></activity>
-        <activity android:name=".activities.ActiveCardActivity"></activity>
+        <activity android:name="com.crocodile.activities.NumberOfPlayersActivity"></activity>
+        <activity android:name="com.crocodile.activities.NameOfPlayersActivity"></activity>
+        <activity android:name="com.crocodile.activities.ChoosePlayerActivity"></activity>
+        <activity android:name="com.crocodile.activities.ActiveCardActivity"></activity>
     </application>
 </manifest>

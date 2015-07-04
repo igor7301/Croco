@@ -1,4 +1,4 @@
-package com.android.crocodile.activities;
+package com.crocodile.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,10 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-import com.android.crocodile.Card;
-import com.android.crocodile.CardManager;
+import com.crocodile.Card;
+import com.crocodile.CardManager;
 import com.android.crocodile.R;
-import com.android.crocodile.Utils;
+import com.crocodile.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

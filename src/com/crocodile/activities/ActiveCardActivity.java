@@ -1,4 +1,4 @@
-package com.android.crocodile.activities;
+package com.crocodile.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,9 +7,9 @@ import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.widget.*;
-import com.android.crocodile.Card;
+import com.crocodile.Card;
 import com.android.crocodile.R;
-import com.android.crocodile.Utils;
+import com.crocodile.Utils;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

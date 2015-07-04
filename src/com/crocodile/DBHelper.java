@@ -1,4 +1,4 @@
-package com.android.crocodile;
+package com.crocodile;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

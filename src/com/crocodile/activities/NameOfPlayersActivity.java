@@ -1,4 +1,4 @@
-package com.android.crocodile.activities;
+package com.crocodile.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 import com.android.crocodile.R;
-import com.android.crocodile.Utils;
+import com.crocodile.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.android.crocodile;
+package com.crocodile;
 
 /**
  * Created by v-ikomarov on 11/19/2014.

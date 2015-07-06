@@ -1,4 +1,4 @@
-package com.crocodile;
+package com.card.crocodile;
 
 /**
  * Created by v-ikomarov on 11/19/2014.

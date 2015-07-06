@@ -1,12 +1,12 @@
-package com.crocodile.activities;
+package com.card.crocodile.activities;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
-import com.android.crocodile.R;
-import com.crocodile.Utils;
+import com.card.crocodile.R;
+import com.card.crocodile.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

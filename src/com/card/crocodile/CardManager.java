@@ -1,4 +1,4 @@
-package com.crocodile;
+package com.card.crocodile;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -6,7 +6,7 @@ import android.content.res.TypedArray;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
-import com.android.crocodile.R;
+import com.card.crocodile.R;
 
 import java.util.*;
 

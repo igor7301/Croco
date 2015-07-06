@@ -1,4 +1,4 @@
-package com.crocodile.activities;
+package com.card.crocodile.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,14 +7,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import com.android.crocodile.R;
-import com.crocodile.Utils;
+import com.card.crocodile.R;
+import com.card.crocodile.Utils;
+import com.startapp.android.publish.StartAppAd;
 
 public class NumberOfPlayersActivity extends Activity implements View.OnClickListener {
     private final static  String MY_LOG = "MY_LOG";
     private EditText numberOfPlayers;
     private ImageButton btnContinue;
-
 
 
     /**
@@ -46,6 +46,7 @@ public class NumberOfPlayersActivity extends Activity implements View.OnClickLis
                     Intent intent = new Intent(this, NameOfPlayersActivity.class);
                     intent.putExtra(Utils.NUMBER_OF_PLAYERS, numberOfPlayers.getText().toString());
                     startActivity(intent);
+
                 }
                 else {
                     Toast.makeText(this, getString(R.string.numberOfPlayers), Toast.LENGTH_SHORT).show();

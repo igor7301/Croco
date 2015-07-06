@@ -1,4 +1,4 @@
-package com.crocodile;
+package com.card.crocodile;
 
 import android.os.Parcel;
 import android.os.Parcelable;

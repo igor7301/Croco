@@ -1,4 +1,4 @@
-package com.crocodile.activities;
+package com.card.crocodile.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-import com.crocodile.Card;
-import com.crocodile.CardManager;
-import com.android.crocodile.R;
-import com.crocodile.Utils;
+import com.card.crocodile.Card;
+import com.card.crocodile.CardManager;
+import com.card.crocodile.R;
+import com.card.crocodile.Utils;
+import com.startapp.android.publish.StartAppAd;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,7 @@ import java.util.List;
  * Created by v-ikomarov on 11/19/2014.
  */
 public class ChoosePlayerActivity extends Activity implements View.OnClickListener{
+    private StartAppAd startAppAd = new StartAppAd(this);
     private Integer numberOfPlayers;
     private List<Button> lstButtons;
     private List<Card> lstActiveCards;
@@ -139,6 +141,8 @@ public class ChoosePlayerActivity extends Activity implements View.OnClickListen
                 intent.putExtra(Utils.NAME_OF_PLAYERS, nameOfPlayers.get(playerId));
 
                 startActivityForResult(intent, Utils.REQUEST_CODE_ACTIVE_CARD);
+                startAppAd.showAd();
+                startAppAd.loadAd();
 
             }
 

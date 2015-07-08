@@ -238,11 +238,11 @@ public class ActiveCardActivity extends Activity implements View.OnClickListener
         btnBlock3.setText(playersCards.get(activeCardId).getWordsList().get(5));
         btnBlock4.setText(playersCards.get(activeCardId).getWordsList().get(6));
         btnBlock5.setText(playersCards.get(activeCardId).getWordsList().get(7));
-        btnBlock1.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
-        btnBlock2.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
-        btnBlock3.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
-        btnBlock4.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
-        btnBlock5.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
+//        btnBlock1.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
+//        btnBlock2.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
+//        btnBlock3.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
+//        btnBlock4.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
+//        btnBlock5.setTextSize(getResources().getDimension(R.dimen.textSizeOnBlockButtonsOnActiveCard));
 
 
         txtPlayerName.setText(playerName);
